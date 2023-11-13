@@ -1,0 +1,76 @@
+@font-face {
+    font-family:  "Neue Haas";
+    src: url(../assets/fonts/NeueHaasDisplayRoman.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: initial !important;
+}
+html, body {
+    min-height: 100%;
+    height: auto;
+}
+:root {
+	--black: #080808;
+	--white: #ffffff;
+    --secondaryColor : #C5FF49;
+
+    // sizing 
+    --xs-sizing: 8px; 
+    --s-sizing: 16px; 
+    --m-sizing: 24px; 
+    --l-sizing: 32px; 
+    --xl-sizing: 64px; 
+    --xxl-sizing: 120px; 
+
+    --padding : 50px;
+
+    --spacer:72px;
+}
+::selection {
+    background-color: var(--secondaryColor);
+    color: var(--black);
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+body {
+    font-family: "Neue Haas", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--xl-sizing);
+    padding: var(--padding);
+}
+
+
+
+/*  SCROLLBAR   */
+*::-webkit-scrollbar {
+    width: 4px;
+    scrollbar-color: var(--secondaryColor);
+}
+*::-webkit-scrollbar-thumb {
+    background: var(--secondaryColor);
+  }
+ 
