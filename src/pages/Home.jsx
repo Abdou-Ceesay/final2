@@ -5,11 +5,11 @@ import Featured from '../components/sections/featured'
 import Lenis from '@studio-freight/lenis'
 
 function Home() {
-  useEffect( ()=> {
-    const lenis = new Lenis({
-      duration:4,
-    })
-  },[])
+  // useEffect( ()=> {
+  //   const lenis = new Lenis({
+  //     duration:4,
+  //   })
+  // },[])
 
   return (
     <>
