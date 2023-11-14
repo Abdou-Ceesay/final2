@@ -34,7 +34,7 @@ function Featured() {
         <StyledFeatured>
         <Modal modal={modal} projects={projects}/>
 
-            <h1 className='section-title'>My Featured works</h1>   
+            <h1 className='section-title'>Featured works</h1>   
             <div className="projects">
                 
                 {
