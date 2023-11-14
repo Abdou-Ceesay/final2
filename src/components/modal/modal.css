@@ -1,14 +1,13 @@
 .modalContainer {
-    width: 400px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     pointer-events: none;
-    transform-origin: center;
-    
+    z-index: 999;
     }
     
     .modalSlider {
@@ -20,12 +19,7 @@
     .modal {
         width: 100%;
         height: 100%;
-        display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-    z-index: 1000;
+        z-index: 1000;
     }
     .modal img {
         width: 100%;
@@ -34,13 +28,13 @@
     }
     .cursor, .cursorLabel{
 
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         background-color: var(--secondaryColor);
         color: var(--black);
-        position: absolute;
-        z-index: 2;
+        position: fixed;
+        z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,4 +47,6 @@
     
     .cursorLabel{
         background-color: transparent;
+        font-size: 18px;
+        font-weight: 500;
     }

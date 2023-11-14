@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import styled from 'styled-components'
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
 import "./modal.css"
 import gsap from 'gsap';
 // import Image from '../../assets/img/zoom65-blue.png';
@@ -62,6 +62,7 @@ function Modal({modal, projects}) {
     const container = useRef(null);
     const cursor = useRef(null);
     const cursorLabel = useRef(null);
+  
     useEffect(() => {
         const moveContainerX = gsap.quickTo(container.current, "left", {duration:0.65, ease: "power3"})
         const moveContainerY = gsap.quickTo(container.current, "top", {duration:0.65, ease: "power3"})
@@ -72,54 +73,52 @@ function Modal({modal, projects}) {
         const moveCursorLabelX = gsap.quickTo(cursorLabel.current, "left", {duration:0.45, ease: "power3"})
         const moveCursorLabelY = gsap.quickTo(cursorLabel.current, "top", {duration:0.45, ease: "power3"})
 
-        window.addEventListener("mousemove", (e) => {
-            const { clientX }= e;
-            const { clientY }= e;
+        const manageMouseMove = (e)=>{
+            const {clientX, clientY} = e;
             moveContainerX(clientX);
             moveContainerY(clientY);
             moveCursorX(clientX);
             moveCursorY(clientY);
             moveCursorLabelX(clientX);
             moveCursorLabelY(clientY);
-            console.log(clientX)
-        })
+         }  
+         window.addEventListener("mousemove", manageMouseMove)
+            
     },[])
 
   return (
-    <>
-    
+    <> 
+            <motion.div ref={container} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className='modalContainer'>
+                <div  style={{top: index * -100 + "%"}} className="modalSlider">  
 
-        
-            <motion.div ref={container} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className='modalContainer'>
-            <div  style={{top: index * -100 + "%"}} className="modalSlider">  
+                    {
 
-            {
+                    projects.map( (project, index) => {
 
-            projects.map( (project, index) => {
+                    const { src, color } = project
 
-            const { src, color } = project
+                    return <div className="modal" style={{backgroundColor: color}} key={`modal_${index}`}>
 
-            return <div className="modal" style={{backgroundColor: color}} key={`modal_${index}`}>
+                                <img
 
-                <img
+                                src={process.env.PUBLIC_URL + project.img}
 
-                src={process.env.PUBLIC_URL + project.img}
+                                width={300}
 
-                width={300}
+                                height={0}
 
-                height={0}
+                                alt="image"
 
-                alt="image"
+                                />
 
-                />
+                            </div>
 
-            </div>
+                    })
 
-            })
-
-            }
-            </div>
+                }
+                </div>
             </motion.div>
+
             <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursor"></motion.div>
             <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursorLabel">View</motion.div>
     </>
