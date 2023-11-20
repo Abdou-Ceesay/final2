@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import "./modal.css"
 import gsap from 'gsap';
+import overlay from "../../assets/img/overlay.png"
 // import Image from '../../assets/img/zoom65-blue.png';
 
 const scaleAnimation = {
@@ -90,6 +91,9 @@ function Modal({modal, projects}) {
   return (
     <> 
             <motion.div ref={container} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className='modalContainer'>
+                <div className="modalWindow">
+
+                
                 <div  style={{top: index * -100 + "%"}} className="modalSlider">  
 
                     {
@@ -121,9 +125,11 @@ function Modal({modal, projects}) {
 
                 }
                 </div>
+                <div className="modal-overlay"><img src={overlay}/></div>
+                </div>
             </motion.div>
 
-            <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursor"></motion.div>
+            <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="modalCursor"></motion.div>
             <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursorLabel">View</motion.div>
     </>
         

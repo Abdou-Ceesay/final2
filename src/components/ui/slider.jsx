@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import styled from 'styled-components';
-import star from "../../assets/img/star.svg"
+import star from "../../assets/img/star-2.png"
 
 const Slider = styled.div`
 width: 100vw;
@@ -11,8 +11,11 @@ width: 100vw;
     border-bottom: 1px solid white;
     padding: 18px 0;
     h2 {
-        font-size: 80px;
+        font-size: 48px;
         font-weight: 500;
+    }
+    .star {
+        transform: scale(0.5);
     }
     .splide__list {
         display: flex;
@@ -35,7 +38,7 @@ function slider() {
           pauseOnHover: false,
           pauseOnFocus: false,
           rewind: false,
-          speed: 1
+          speed: 1.4
         }
       }}
       extensions={{ AutoScroll }}>
@@ -43,25 +46,25 @@ function slider() {
                 <h2>Branding</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} alt="star" />
+                <img src={star} className="star" />
             </SplideSlide>
             <SplideSlide>
                 <h2>UI Design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} alt="star"/>
+                <img src={star} className="star"/>
             </SplideSlide>
             <SplideSlide>
                 <h2>3D Animation</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} alt="star" />
+                <img src={star} className="star" />
             </SplideSlide>
             <SplideSlide>
                 <h2>Product Design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} alt="star" />
+                <img src={star} className="star" />
             </SplideSlide>
         </Splide>
     </Slider>

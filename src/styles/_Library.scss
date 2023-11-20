@@ -2,6 +2,10 @@
     font-family:  "Neue Haas";
     src: url(../assets/fonts/NeueHaasDisplayRoman.ttf);
 }
+@font-face {
+    font-family:  "Kusanagi";
+    src: url(../assets/fonts/Kusanagi.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -55,11 +59,12 @@ a {
 }
 h1, h2, h3 {
     font-weight: 500;
+    font-family: "Kusanagi", "Neue Haas", sans-serif;
 }
 
 .section-title {
     text-align: center;
-    font-size: var(--xl-sizing);
+    font-size: 44px;
     padding: var(--padding);
 }
 

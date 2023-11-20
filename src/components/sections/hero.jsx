@@ -5,26 +5,49 @@ import open from '../../assets/img/open.svg';
 import Slider from '../ui/slider';
 import {motion, useInView } from 'framer-motion';
 
+// IMAGES
+import sphere from "../../assets/img/sphere.png"
+import stars from "../../assets/img/stars.svg"
+
 
 const StyledHero = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     .hero-main {
         padding-left:var(--padding);
         display : flex;
         height: calc(100vh - 100px);
         align-items: center;
         width: 100%;
+        position: relative;
     }
     
     .hero-text {
-        width: 70%;
+        width: 90%;
+    }
+    .sphere {
+      position: absolute;
+      top: -8%;
+      left: -3%;
+      opacity: 0.6;
+      z-index: -2;
+      transform: scale(.6);
+    }
+    .stars {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      opacity: 1;
+      z-index: -1;
+      transform: scale(.8);
     }
     h1 {
-        font-size: var(--xxl-sizing);
+        font-size: 60px;
         line-height :110%;
+
     }
     .hero-frame {
         position : relative;
@@ -68,10 +91,9 @@ const StyledHero = styled.div`
 
 function hero() {
   const phrases = [
-    "I am a UI/UX & 3D",
-    "designer passionate",
-    "about creating great",
-    "user experiences.",
+    "I am a UI/UX & 3D designer",
+    "passionate about creating",
+    " great user experiences.",
   ]
 
   return (
@@ -80,14 +102,17 @@ function hero() {
             
                <MaskText phrases={phrases}/>
             
-            <div className="hero-img">
+            {/* <div className="hero-img">
                 <div className="hero-frame">
                     <img src={frame} alt=""/>
                     <img className='hero-open rotating' src={open} alt=""/>
                 </div>
-            </div>
+            </div> */}
         </div>
-        
+        <div className="background">
+          <div className="stars"><img src={stars} /></div>
+          <div className="sphere"><img src={sphere} alt="sphere" /></div>
+        </div>
         <Slider/>
     </StyledHero>
   )
@@ -105,6 +130,7 @@ function MaskText({phrases}) {
 
 
   return (
+    
     <div ref={body} className='hero-text'>
       {
         phrases.map( (phrase, index) => {
@@ -114,6 +140,7 @@ function MaskText({phrases}) {
         })
       }
     </div>
+    
   )
 }
 

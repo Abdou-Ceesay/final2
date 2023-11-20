@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
+import gsap from 'gsap';
+import cursor from "../../assets/img/cursor.svg"
 
 const StyledCursor = styled.div`
-.cursor{
+/* .cursor{
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -11,13 +13,15 @@ const StyledCursor = styled.div`
     position: fixed;
     pointer-events: none;
     z-index: 1;
-}
-    
+} */
+    .cursor-img {
+      position: fixed;
+      transform: scale(0.8);
+    }
 `
 
 function Stickycursor() {
-
- const cursorSize = 20;   
+ const cursorSize = 70;   
  const mouse = {
     x: useMotionValue(0),
     y: useMotionValue(0),
@@ -42,9 +46,9 @@ useEffect( () => {
 
   return (
     <StyledCursor>
-    <motion.div className='cursor' style={{left: smoothMouse.x, top: smoothMouse.y}}>
-        
-    </motion.div>
+   
+        <motion.img src={cursor} className='cursor-img'  style={{left: smoothMouse.x, top: smoothMouse.y}}/>
+   
     </StyledCursor>
     
   )

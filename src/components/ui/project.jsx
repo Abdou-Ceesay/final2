@@ -26,7 +26,7 @@ const StyledProject = styled.div`
         border-bottom:1px solid #ffffff20;
     }
     h2 {
-        font-size: calc(var(--l-sizing) * 1.3);
+        font-size: calc(var(--l-sizing) * 1);
         transition: transform .2s linear;
         display: flex;
         align-items: baseline;
