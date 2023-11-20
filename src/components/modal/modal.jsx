@@ -85,6 +85,7 @@ function Modal({modal, projects}) {
          window.addEventListener("mousemove", manageMouseMove)
             
     },[])
+    
 
   return (
     <> 
@@ -97,17 +98,20 @@ function Modal({modal, projects}) {
 
                     const { src, color } = project
 
-                    return <div className="modal" style={{backgroundColor: color}} key={`modal_${index}`}>
+                    return <div className="modal" style={{backgroundColor: color}} key={`modal_${index}`} layoutId={project.id + "img"}>
 
-                                <img
+                                <motion.img
+
+                                layoutId={project.id + "img"}
 
                                 src={process.env.PUBLIC_URL + project.img}
 
-                                width={300}
-
-                                height={0}
-
                                 alt="image"
+                                style={{
+                                    width: "100%",
+                                     height: "100%",
+                                         objectFit: "cover",
+                                }}
 
                                 />
 

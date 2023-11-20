@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import styled from 'styled-components';
 import frame from '../../assets/img/frame.png';
 import open from '../../assets/img/open.svg';
 import Slider from '../ui/slider';
+import {motion, useInView } from 'framer-motion';
 
 
 const StyledHero = styled.div`
@@ -15,6 +16,7 @@ const StyledHero = styled.div`
         display : flex;
         height: calc(100vh - 100px);
         align-items: center;
+        width: 100%;
     }
     
     .hero-text {
@@ -22,7 +24,7 @@ const StyledHero = styled.div`
     }
     h1 {
         font-size: var(--xxl-sizing);
-        line-height :100%
+        line-height :110%;
     }
     .hero-frame {
         position : relative;
@@ -32,6 +34,9 @@ const StyledHero = styled.div`
         bottom:-15%;
         right : -30%;
         transform: translateX(-50%);
+    }
+    .lineMask {
+      overflow: hidden;
     }
     @keyframes rotating {
         from {
@@ -62,12 +67,19 @@ const StyledHero = styled.div`
 `
 
 function hero() {
+  const phrases = [
+    "I am a UI/UX & 3D",
+    "designer passionate",
+    "about creating great",
+    "user experiences.",
+  ]
+
   return (
     <StyledHero>
         <div className="hero-main">
-            <div className="hero-text">
-                <h1>I am a <span>UI/UX</span> & <span>3D Designer</span> passionate about creating great user experiences<span>.</span></h1>
-            </div>
+            
+               <MaskText phrases={phrases}/>
+            
             <div className="hero-img">
                 <div className="hero-frame">
                     <img src={frame} alt=""/>
@@ -78,6 +90,30 @@ function hero() {
         
         <Slider/>
     </StyledHero>
+  )
+}
+function MaskText({phrases}) {
+
+  const animate = {
+    initial: {y: "100%"},
+    open: (i) => ({y: "0%", transition: {duration: .75, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1]}})
+  }
+
+  const body = useRef(null);
+  const isInView = useInView(body, {once: true, margin:"-10%"});
+
+
+
+  return (
+    <div ref={body} className='hero-text'>
+      {
+        phrases.map( (phrase, index) => {
+          return <div key={index} className='lineMask'>
+            <motion.h1 custom={index} variants={animate} initial="initial" animate={isInView ? "open" : ""}>{phrase}</motion.h1>
+            </div>
+        })
+      }
+    </div>
   )
 }
 

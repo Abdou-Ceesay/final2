@@ -1,41 +1,109 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
+import {motion, AnimatePresence} from "framer-motion"
+// import arrow from "../../assets/img/arrow.svg"
+const StyledLink = styled.div`
+    width: 100%;
+    opacity: 0.5;
+    transition: all .2s ease-in;
+    &:hover {
+        opacity: 1;
+    }
+`
 const StyledProject = styled.div`
     width: 100%;
-    padding: var(--padding);
+    padding: 20px var(--padding);
     border-top: 1px solid #ffffff20;
     display: flex;
     justify-content: space-between;
-    transition: transform .2s linear;
+    align-items: center;
+    transition: all .2s ease-in;
+    
+    &:last-child {
+        border-bottom:1px solid #ffffff20;
+    }
     h2 {
         font-size: calc(var(--l-sizing) * 1.3);
         transition: transform .2s linear;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+    }
+    .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: var(--secondaryColor);
+        transform: scale(0);
+        transition: transform .15s ease-out;
     }
     p {
         font-size: var(--m-sizing);
-        transition: transform .2s linear ;
+        transition: all .2s linear ;
+    }
+    svg path {
+        transition: all .2s ease-in;
+    }
+    .arrow {
+        width: 100px;
+        height: 100px;
+        /* background-color: var(--secondaryColor); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in;
+    }
+    &:hover svg path {
+        fill: var(--black);
+    }
+    &:hover .arrow {
+        background-color: var(--secondaryColor);
     }
     &:hover {
-        opacity: 0.4;
+        opacity: 1;
+        background-color: #ffffff08;
     }
     &:hover h2 {
-        transform: translateX(-10px);
+        transform: translateX(20px);
+    }
+    &:hover .dot {
+        transform: scale(1);
     }
     &:hover p {
         transform: translateX(10px);
     }
+
 `
 
-function project({index, title, setModal, tag}) {
+function Project(props) {
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
-    <StyledProject onMouseEnter={() => {setModal({active: true, index: index})}} onMouseLeave={() => {setModal({active: false, index: index})}}>
+    <StyledLink>
+<Link to={props.path} className='projectLink'>
+        <StyledProject onMouseEnter={() => {props.setModal({active: true, index: props.index})}} onMouseLeave={() => {props.setModal({active: false, index: props.index})}} data-aos="fade-up">
 
-            <h2>{title}</h2>
 
-            <p>{tag}</p>
+            <motion.h2 exit={{opacity:0}}>{props.title}<span className='dot'></span></motion.h2>
+            <div className="arrow">
+            <svg width="30" height="30" viewBox="0 0 43 43" fill="blue" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.87868 37.8787C-0.292893 39.0503 -0.292893 40.9497 0.87868 42.1213C2.05025 43.2929 3.94975 43.2929 5.12132 42.1213L0.87868 37.8787ZM43 3C43 1.34314 41.6569 -9.06788e-07 40 -3.16732e-07L13 -2.00261e-06C11.3431 -2.00261e-06 10 1.34314 10 3C10 4.65685 11.3431 6 13 6H37V30C37 31.6569 38.3431 33 40 33C41.6569 33 43 31.6569 43 30L43 3ZM5.12132 42.1213L42.1213 5.12132L37.8787 0.878678L0.87868 37.8787L5.12132 42.1213Z" fill="white"/>
+            </svg>
 
-    </StyledProject>
+            </div>
+
+        </StyledProject>
+    </Link>
+    </StyledLink>
+    
+   
+    
+    
   )
 }
 
-export default project
+export default Project

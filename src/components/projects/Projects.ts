@@ -9,7 +9,8 @@ export interface Iprojects {
   img: string;
   tag: string;
   color: string;
-  path: string
+  path: string;
+  id: string;
 }
 
 export const projects: Iprojects[] = [
@@ -19,28 +20,32 @@ export const projects: Iprojects[] = [
       img: Zoom,
       tag:"3d Styleframes",
       color: "#000000",
-      path: "/"
+      path: "/zoom-65",
+      id: "zoom",
     },
     {
       title: "OneClock - Alarm clock",
       img: Oneclock,
       tag:"3d Styleframes",
       color: "#000000",
-      path: "/"
+      path: "/oneclock",
+      id: "oneclock",
     },
     {
       title: "Dior Homme",
       img: Dior,
       tag:"3d Styleframes",
       color: "#000000",
-      path: "/"
+      path: "/dior",
+      id: "dior",
     },
     {
       title: "Autonomous Smartdesk",
       img: Autonomous,
       tag:"3d Animation",
       color: "#000000",
-      path: "/"
+      path: "/autonomous",
+      id: "autonomous",
     },
   
   ]

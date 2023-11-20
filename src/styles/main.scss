@@ -1,1 +1,29 @@
 @import "Library";
+
+.project-title {
+    display: flex;
+    padding: var(--padding);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--xs-sizing);
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 24px;
+        color: #636363;
+    }
+}
+
+.project-img-wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    img {
+        object-fit: cover;
+        // width: 100%;
+    }
+}
