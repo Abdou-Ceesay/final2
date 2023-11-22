@@ -15,6 +15,8 @@ const StyledCursor = styled.div`
     z-index: 1;
 } */
     .cursor-img {
+      z-index: 999;
+      pointer-events: none;
       position: fixed;
       transform: scale(0.8);
     }

@@ -14,7 +14,7 @@ const fadeUp = {
 
 
 const StyledNav = styled.div`
-    
+    background-color: #111111;
     .nav-motion {
         width: 100%;
         display: flex;

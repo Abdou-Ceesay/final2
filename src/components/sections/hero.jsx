@@ -11,6 +11,7 @@ import stars from "../../assets/img/stars.svg"
 
 
 const StyledHero = styled.div`
+    background-color: #111111;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,7 @@ const StyledHero = styled.div`
       top: -8%;
       left: -3%;
       opacity: 0.6;
-      z-index: -2;
+      z-index: 3;
       transform: scale(.6);
     }
     .stars {
@@ -41,7 +42,7 @@ const StyledHero = styled.div`
       top: -10%;
       left: -10%;
       opacity: 1;
-      z-index: -1;
+      z-index: 3;
       transform: scale(.8);
     }
     h1 {
@@ -108,11 +109,12 @@ function hero() {
                     <img className='hero-open rotating' src={open} alt=""/>
                 </div>
             </div> */}
-        </div>
-        <div className="background">
+             
           <div className="stars"><img src={stars} /></div>
           <div className="sphere"><img src={sphere} alt="sphere" /></div>
+        
         </div>
+       
         <Slider/>
     </StyledHero>
   )

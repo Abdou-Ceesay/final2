@@ -14,7 +14,8 @@ import Modal from '../modal/modal'
 
 
 const StyledFeatured = styled.div`
-    margin : var(--spacer) 0;
+    padding : calc(var(--spacer) * 2) 0;
+    background-color: #111111;
     position: relative;
     .projects {
         display: flex;

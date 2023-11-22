@@ -24,7 +24,7 @@ html, body {
 :root {
   --black: #111111;
   --white: #ffffff;
-  --secondaryColor: #C5FF49;
+  --secondaryColor: #b0ff05;
   --xs-sizing: 8px;
   --s-sizing: 16px;
   --m-sizing: 24px;
@@ -96,9 +96,11 @@ h1, h2, h3 {
 }
 .project-title h1 {
   font-size: 44px;
+  margin-bottom: 20px;
 }
 .project-title h2 {
   font-size: 24px;
+  font-family: "Neue Haas", sans-serif;
   color: #636363;
 }
 

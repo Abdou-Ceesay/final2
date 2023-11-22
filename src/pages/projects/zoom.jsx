@@ -17,7 +17,7 @@ function zoom(props, id) {
     <>
     <motion.div className="project-title" variants={fadeUp} initial="initial"  animate="enter" transition={transition}>
     <h1>Zoom65 Mechanical Keyboard</h1>
-    <h2>Role : Modeling / rendering / texturing / lighting</h2>
+    <h2 className='project-role'>Role : Modeling / rendering / texturing / lighting</h2>
     </motion.div>
     <div className="project-img-wrapper">
         <motion.img layoutId='zoomimg' src={img1} transition={{ease: [0.76, 0, 0.24, 1], duration: .75}} alt="zoom" />

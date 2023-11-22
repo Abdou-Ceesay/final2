@@ -9,7 +9,7 @@ const StyledProgress = styled.div`
         left: 0;
         right: 0;
         /* width: ; */
-        height: 2px;
+        height: 1px;
         background-color: var(--secondaryColor);
         transform-origin: 0%;
     }
