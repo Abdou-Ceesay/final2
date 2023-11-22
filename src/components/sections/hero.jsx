@@ -28,8 +28,10 @@ const StyledHero = styled.div`
     
     .hero-text {
         width: 90%;
+        z-index: 4;
     }
     .sphere {
+      pointer-events: none;
       position: absolute;
       top: -8%;
       left: -3%;
@@ -38,6 +40,7 @@ const StyledHero = styled.div`
       transform: scale(.6);
     }
     .stars {
+      pointer-events: none;
       position: absolute;
       top: -10%;
       left: -10%;
