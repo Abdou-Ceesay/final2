@@ -27,7 +27,7 @@ const StyledProject = styled.div`
     }
     h2 {
         font-size: calc(var(--l-sizing) * 1);
-        transition: transform .2s linear;
+        transition: transform .5s ease-out;
         display: flex;
         align-items: baseline;
         gap: 12px;

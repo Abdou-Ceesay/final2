@@ -102,30 +102,31 @@ function Modal({modal, projects}) {
 
                     const { src, color } = project
 
-                    return <div className="modal" style={{backgroundColor: color}} key={`modal_${index}`} layoutId={project.id + "img"}>
+                    return <motion.div initial={""}  className="modal" style={{backgroundColor: color}} key={`modal_${index}`} layoutId={project.id + "img"}>
 
-                                <motion.img
+                                <img
 
-                                layoutId={project.id + "img"}
+                                
 
                                 src={process.env.PUBLIC_URL + project.img}
 
                                 alt="image"
                                 style={{
+                                    backgrouColor: "red",
                                     width: "100%",
                                      height: "100%",
-                                         objectFit: "cover",
+                                     objectFit: "cover",
                                 }}
 
                                 />
 
-                            </div>
+                            </motion.div>
 
                     })
 
                 }
                 </div>
-                <div className="modal-overlay"><img src={overlay}/></div>
+                {/* <div className="modal-overlay"><img src={overlay}/></div> */}
                 </div>
             </motion.div>
 

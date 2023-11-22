@@ -19,7 +19,7 @@ function App() {
 
   useEffect(()=>{
     const lenis = new Lenis({
-      duration:2,
+      duration:1.5,
     })
 
 

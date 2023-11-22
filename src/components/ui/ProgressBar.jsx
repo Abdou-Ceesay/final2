@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const StyledProgress = styled.div`
     .progress-bar {
         position: fixed;
+        z-index: 999;
         top: 0;
         left: 0;
         right: 0;
