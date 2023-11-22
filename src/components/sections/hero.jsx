@@ -17,10 +17,13 @@ const StyledHero = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    
+    height: calc(100vh - 100px);
     .hero-main {
         padding-left:var(--padding);
-        display : flex;
+        
         height: calc(100vh - 100px);
+        display : flex;
         align-items: center;
         width: 100%;
         position: relative;

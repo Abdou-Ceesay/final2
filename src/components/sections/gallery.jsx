@@ -1,55 +1,69 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
+import {motion, useScroll, useTransform } from 'framer-motion'
 
 const StyledGallery = styled.div`
     .gallery-container {
         width: 100%;
-        height: 100vh;
-        padding: calc(var(--xl-sizing) * .75) var(--padding);
+        padding: calc(var(--xl-sizing) * 3) var(--padding);
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: #111111;
-        gap: calc(var(--xl-sizing) * 1.3);
+        gap: calc(var(--l-sizing) * 1);
         border-radius: 0 0 50px 50px;
         position: relative;
-        .gallery-row1, .gallery-row2 {
-            transform: scale(1.2);
+        .gallery-row, .gallery-row {
             display: flex;
-            width:100%;
+            width:120vw;
             gap:1%;
             .gallery-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 24%;
-                height: auto;
-                aspect-ratio: 4/3;
+                height: 35vh;
+                /* aspect-ratio: 4/3; */
                 background-color: #ffffff10;
+                font-size: 24px;
+                color:#888888
             }
         }
-        .gallery-row2 {
-            margin-left: 100px;
-        }
+  
+     
     }
 
 `
 
-function gallery() {
+function Gallery() {
+
+  const container = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target: container,
+    offset: ["start end", "end start"]
+  })
+
+  const x1 = useTransform(scrollYProgress, [0, 1], [0, -200])
+  const x2 = useTransform(scrollYProgress, [0, 1], [0, 200])
+
   return (
     <StyledGallery>
-        <div className="gallery-container">
-            <div className="gallery-row1">
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-            </div>
-            <div className="gallery-row2" id='row2'>
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-                <div className="gallery-item"></div>
-            </div>
+        <div className="gallery-container" ref={container}>
+            <motion.div style={{x: x1}} className="gallery-row">
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+            </motion.div>
+            <motion.div style={{x: x2}} className="gallery-row">
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+                <div className="gallery-item">Img</div>
+            </motion.div>
         </div>
     </StyledGallery>
   )
 }
 
-export default gallery
+export default Gallery
