@@ -27,7 +27,7 @@ const StyledProject = styled.div`
     }
     h2 {
         font-size: calc(var(--l-sizing) * 1);
-        transition: transform .5s ease-out;
+        transition: transform .35s ease-in;
         display: flex;
         align-items: baseline;
         gap: 12px;
@@ -67,7 +67,7 @@ const StyledProject = styled.div`
         background-color: #ffffff08;
     }
     &:hover h2 {
-        transform: translateX(20px);
+        transform: translateX(16px);
     }
     &:hover .dot {
         transform: scale(1);

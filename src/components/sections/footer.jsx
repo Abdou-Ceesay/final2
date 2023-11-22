@@ -8,6 +8,7 @@ const StyledFooter = styled.div`
     /* background-color: #111111; */
     position: sticky;
     bottom: 0;
+    color:#111111;
     z-index: -10;
     display: flex;
     align-items: center;

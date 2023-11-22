@@ -11,7 +11,7 @@ const StyledGallery = styled.div`
         align-items: center;
         background-color: #111111;
         gap: calc(var(--l-sizing) * 1);
-        border-radius: 0 0 50px 50px;
+        border-radius: 0 0 0px 0px;
         position: relative;
         .gallery-row, .gallery-row {
             display: flex;

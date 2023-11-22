@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500&display=swap');
 @font-face {
     font-family:  "Neue Haas";
     src: url(../assets/fonts/NeueHaasDisplayRoman.ttf);
@@ -44,7 +45,7 @@ html, body {
     margin: 0 auto;
 }
 body {
-    font-family: "Neue Haas", sans-serif;
+    font-family:'Bai Jamjuree', sans-serif;
     background-color: var(--black);
     color: var(--white);
     overflow-x: hidden;
