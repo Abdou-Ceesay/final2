@@ -30,22 +30,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
-  },[])
-
-  function LocationProvider({children}) {  
-    return <AnimatePresence mode='wait'>{children}</AnimatePresence>; }
-
-    function RoutesWithAnimation() {
-      const location = useLocation();
-    
-      return (
-        <Routes location={location} key={location.key}>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/zoom-65' element={<Zoom />}></Route>
-        </Routes>
-      );
-    }
-
+  },[]);
     
   return (
     <>

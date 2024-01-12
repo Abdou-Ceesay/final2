@@ -14,7 +14,12 @@ const fadeUp = {
 
 
 const StyledNav = styled.div`
-    background-color: #111111;
+position: absolute;
+top:0;
+left:0;
+z-index: 10000;
+width: 100%;
+    /* background-color: #111111; */
     .nav-motion {
         width: 100%;
         display: flex;
@@ -33,7 +38,7 @@ const StyledNav = styled.div`
         position: absolute;
         top: -10%;
         left:-30%;
-        z-index: -1;
+        z-index: 1;
         /* transform: translate(-50%, -50%); */
     }
     a img{

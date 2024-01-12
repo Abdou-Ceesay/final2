@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import img1 from "../../assets/img/zoom65-blue.png"
+import img1 from "../../assets/img/zoom65-blue.webp"
 import Navbar from '../../components/sections/navbar';
 
 const fadeUp = {

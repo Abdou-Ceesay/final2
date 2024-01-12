@@ -1,7 +1,7 @@
-import Zoom from "../../assets/img/zoom65-blue.png"
-import Oneclock from "../../assets/img/oneclock-inside-angle.png"
-import Dior from "../../assets/img/dior.png"
-import Autonomous from "../../assets/img/autonomous.jpg"
+import Zoom from "../../assets/img/zoom65-blue.webp"
+import Oneclock from "../../assets/img/oneclock-inside-angle.webp"
+import Dior from "../../assets/img/dior.webp"
+import Autonomous from "../../assets/img/autonomous.webp"
 
 
 export interface Iprojects {
@@ -32,7 +32,7 @@ export const projects: Iprojects[] = [
       id: "oneclock",
     },
     {
-      title: "Dior Homme",
+      title: "dior Homme",
       img: Dior,
       tag:"3d Styleframes",
       color: "#000000",

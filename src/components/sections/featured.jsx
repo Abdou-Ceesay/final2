@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import AOS from 'aos';
 
 
-import oneclock from "../../assets/img/oneclock-inside-angle.png"
-import k1 from "../../assets/img/zoom65-blue.png"
+
 import Project from '../ui/project'
 import { projects } from '../projects/Projects.ts'
 import project from '../ui/project'
 import Modal from '../modal/modal'
+import blur2 from "../../assets/img/Vector 4.png"
 
 
 const StyledFeatured = styled.div`
     padding-top : calc(var(--spacer) * 2);
     background-color: #111111;
     position: relative;
+    z-index: 3;
     .projects {
         display: flex;
         flex-direction: column;
@@ -26,7 +26,15 @@ const StyledFeatured = styled.div`
         justify-content: center;
     }
    
-
+    .blur2 {
+        position: absolute;
+        right: -20%;
+        transform: scale(1);
+        bottom: 0;
+        z-index: 2;
+        opacity: .5;
+        pointer-events: none;
+    }
 `
 const transition = { duration:3, ease: [0.43, 0.13, 0.23, 0.96]};
 
@@ -55,7 +63,7 @@ function Featured() {
              
             </div>
             
-           
+           <img className='blur2' src={blur2} />
         </StyledFeatured>
         
     </>

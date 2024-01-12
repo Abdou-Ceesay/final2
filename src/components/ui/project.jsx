@@ -4,6 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import {motion, AnimatePresence} from "framer-motion"
+
+import zoom from "../../assets/img/zoom65-blue.webp"
 // import arrow from "../../assets/img/arrow.svg"
 const StyledLink = styled.div`
     width: 100%;
@@ -12,6 +14,18 @@ const StyledLink = styled.div`
     &:hover {
         opacity: 1;
     }
+    .project-mobile {
+        display: none;
+    }
+    @media only screen and (max-width: 768px) {
+    .project-mobile{
+        display: block;
+    }
+    opacity: 1;
+    .projectLink {
+        display: none;
+    }
+}
 `
 const StyledProject = styled.div`
     width: 100%;
@@ -76,6 +90,29 @@ const StyledProject = styled.div`
         transform: translateX(10px);
     }
 
+    
+`
+const StyledMobile = styled.div`
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #888;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .project-cover-m {
+        width: 100%;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .project-title-m {
+            padding: 50px 20px;
+            font-size: 14px;
+        }
 `
 
 function Project(props) {
@@ -84,20 +121,31 @@ function Project(props) {
       }, [])
   return (
     <StyledLink>
-<Link to={props.path} className='projectLink'>
-        <StyledProject onMouseEnter={() => {props.setModal({active: true, index: props.index})}} onMouseLeave={() => {props.setModal({active: false, index: props.index})}} data-aos="fade-up">
+        <Link to={props.path} className='projectLink'>
+            <StyledProject onMouseEnter={() => {props.setModal({active: true, index: props.index})}} onMouseLeave={() => {props.setModal({active: false, index: props.index})}} data-aos="fade-up">
 
 
-            <motion.h2 exit={{opacity:0}}>{props.title}<span className='dot'></span></motion.h2>
-            <div className="arrow">
-            <svg width="30" height="30" viewBox="0 0 43 43" fill="blue" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.87868 37.8787C-0.292893 39.0503 -0.292893 40.9497 0.87868 42.1213C2.05025 43.2929 3.94975 43.2929 5.12132 42.1213L0.87868 37.8787ZM43 3C43 1.34314 41.6569 -9.06788e-07 40 -3.16732e-07L13 -2.00261e-06C11.3431 -2.00261e-06 10 1.34314 10 3C10 4.65685 11.3431 6 13 6H37V30C37 31.6569 38.3431 33 40 33C41.6569 33 43 31.6569 43 30L43 3ZM5.12132 42.1213L42.1213 5.12132L37.8787 0.878678L0.87868 37.8787L5.12132 42.1213Z" fill="white"/>
-            </svg>
+                <motion.h2 exit={{opacity:0}}>{props.title}<span className='dot'></span></motion.h2>
+                <div className="arrow">
+                <svg width="30" height="30" viewBox="0 0 43 43" fill="blue" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.87868 37.8787C-0.292893 39.0503 -0.292893 40.9497 0.87868 42.1213C2.05025 43.2929 3.94975 43.2929 5.12132 42.1213L0.87868 37.8787ZM43 3C43 1.34314 41.6569 -9.06788e-07 40 -3.16732e-07L13 -2.00261e-06C11.3431 -2.00261e-06 10 1.34314 10 3C10 4.65685 11.3431 6 13 6H37V30C37 31.6569 38.3431 33 40 33C41.6569 33 43 31.6569 43 30L43 3ZM5.12132 42.1213L42.1213 5.12132L37.8787 0.878678L0.87868 37.8787L5.12132 42.1213Z" fill="white"/>
+                </svg>
 
-            </div>
+                </div>
 
-        </StyledProject>
-    </Link>
+            </StyledProject>
+        </Link>
+
+        <Link to={props.path} className='project-mobile'>
+            <StyledMobile>
+                <div className="project-cover-m">
+                    <img src={props.img}/>
+                </div>
+                <div className="project-title-m">
+                    <h2>{props.title}</h2>
+                </div>
+            </StyledMobile>
+        </Link>
     </StyledLink>
     
    

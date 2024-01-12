@@ -6,13 +6,17 @@ import styled from 'styled-components';
 import star from "../../assets/img/star-2.png"
 
 const Slider = styled.div`
-width: 100vw;
+width: 100%;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding: 18px 0;
+    /* background-color: red; */
+    max-height: 120px;
+    /* position: absolute; */
     h2 {
         font-size: 48px;
         font-weight: 500;
+        color: #fff;
     }
     .star {
         transform: scale(0.5);
@@ -49,19 +53,19 @@ function slider() {
                 <img src={star} className="star" />
             </SplideSlide>
             <SplideSlide>
-                <h2>UI Design</h2>
+                <h2>UI design</h2>
             </SplideSlide>
             <SplideSlide>
                 <img src={star} className="star"/>
             </SplideSlide>
             <SplideSlide>
-                <h2>3D Animation</h2>
+                <h2>3d Animation</h2>
             </SplideSlide>
             <SplideSlide>
                 <img src={star} className="star" />
             </SplideSlide>
             <SplideSlide>
-                <h2>Product Design</h2>
+                <h2>Product design</h2>
             </SplideSlide>
             <SplideSlide>
                 <img src={star} className="star" />

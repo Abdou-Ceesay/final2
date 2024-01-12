@@ -4,6 +4,10 @@
     src: url(../assets/fonts/NeueHaasDisplayRoman.ttf);
 }
 @font-face {
+    font-family:  "Osiris";
+    src: url(../assets/fonts/Osiris.woff2);
+}
+@font-face {
     font-family:  "Kusanagi";
     src: url(../assets/fonts/Kusanagi.otf);
 }
@@ -18,12 +22,14 @@ html {
 html, body {
     min-height: 100%;
     height: auto;
+    
 }
 :root {
 	--black: #111111;
+    --gray: #222222;
 	--white: #ffffff;
     --secondaryColor : #b0ff05;
-
+    --mainColor : #111111;
     // sizing 
     --xs-sizing: 8px; 
     --s-sizing: 16px; 
@@ -31,7 +37,6 @@ html, body {
     --l-sizing: 32px; 
     --xl-sizing: 64px; 
     --xxl-sizing: 120px; 
-
     --padding : 50px;
 
     --spacer:72px;
@@ -60,7 +65,7 @@ a {
 }
 h1, h2, h3 {
     font-weight: 500;
-    font-family: "Kusanagi", "Neue Haas", sans-serif;
+    font-family: "Osiris", "Neue Haas", sans-serif;
 }
 
 .section-title {

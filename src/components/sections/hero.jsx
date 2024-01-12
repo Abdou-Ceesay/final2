@@ -8,17 +8,24 @@ import {motion, useInView } from 'framer-motion';
 // IMAGES
 import sphere from "../../assets/img/sphere.png"
 import stars from "../../assets/img/stars.svg"
+import blur1 from "../../assets/img/Vector 3.png"
 
 
 const StyledHero = styled.div`
     background-color: #111111;
+    background-size: 100px 100px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-position: -1px -10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    
-    height: calc(100vh - 100px);
+    z-index: 1;
+    /* height: calc(100vh - 100px); */
+    height: 100vh;
     .hero-main {
         padding-left:var(--padding);
         
@@ -28,7 +35,13 @@ const StyledHero = styled.div`
         width: 100%;
         position: relative;
     }
-    
+    .blur1 {
+      position: absolute;
+      left:-20%;
+      transform: scale(1.4);
+      pointer-events: none;
+      opacity: .5;
+    }
     .hero-text {
         width: 90%;
         z-index: 4;
@@ -36,11 +49,15 @@ const StyledHero = styled.div`
     .sphere {
       pointer-events: none;
       position: absolute;
-      top: -8%;
+      top: 5%;
       left: -3%;
-      opacity: 0.6;
+      opacity: 0.75;
       z-index: 3;
-      transform: scale(.6);
+      transform: scale(.5);
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     .stars {
       pointer-events: none;
@@ -52,7 +69,7 @@ const StyledHero = styled.div`
       transform: scale(.8);
     }
     h1 {
-        font-size: 60px;
+        font-size: 72px;
         line-height :110%;
 
     }
@@ -94,11 +111,34 @@ const StyledHero = styled.div`
       span {
         color: var(--secondaryColor);
       }
+      @media only screen and (max-width: 768px) {
+    .hero-main {
+      .hero-text {
+        h1 {
+          font-size: 32px;
+          
+        }
+      }
+      .stars {
+        transform: scale(.6);
+        transform-origin: left;
+        left: -30%;
+
+      }
+      .sphere {
+        transform: scale(.45);
+        left: -18%;
+      }
+      .blur1 {
+        transform: scale(.8);
+      }
+    }
+  }
 `
 
 function hero() {
   const phrases = [
-    "I am a UI/UX & 3D designer",
+    "I am a UI/UX & 3d designer",
     "passionate about creating",
     " great user experiences.",
   ]
@@ -118,6 +158,7 @@ function hero() {
              
           <div className="stars"><img src={stars} /></div>
           <div className="sphere"><img src={sphere} alt="sphere" /></div>
+          <img className='blur1' src={blur1} alt="" />
         
         </div>
        
