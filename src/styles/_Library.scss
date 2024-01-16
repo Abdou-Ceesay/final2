@@ -44,6 +44,7 @@ html, body {
 ::selection {
     background-color: var(--secondaryColor);
     color: var(--black);
+    -webkit-text-fill-color: var(--black);
 }
 .container {
     width: 95%;
@@ -72,6 +73,10 @@ h1, h2, h3 {
     text-align: center;
     font-size: 44px;
     padding: var(--padding);
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.379) 35%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 

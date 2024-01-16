@@ -19,7 +19,7 @@ const StyledGallery = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #111111;
+        background-color: #070707;
         gap: calc(var(--l-sizing) * 1);
         border-radius: 0 0 0px 0px;
         position: relative;

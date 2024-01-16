@@ -14,7 +14,7 @@ import blur2 from "../../assets/img/Vector 4.png"
 
 const StyledFeatured = styled.div`
     padding-top : calc(var(--spacer) * 2);
-    background-color: #111111;
+    background-color: #070707;
     position: relative;
     z-index: 3;
     .projects {

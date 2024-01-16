@@ -12,11 +12,11 @@ import blur1 from "../../assets/img/Vector 3.png"
 
 
 const StyledHero = styled.div`
-    background-color: #111111;
+    background-color: #070707;
     background-size: 100px 100px;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
     background-position: -1px -10px;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,6 @@ const StyledHero = styled.div`
     height: 100vh;
     .hero-main {
         padding-left:var(--padding);
-        
         height: calc(100vh - 100px);
         display : flex;
         align-items: center;
@@ -71,6 +70,10 @@ const StyledHero = styled.div`
     h1 {
         font-size: 72px;
         line-height :110%;
+        background-image:linear-gradient(270deg, black, white 69%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
     }
     .hero-frame {
@@ -84,6 +87,7 @@ const StyledHero = styled.div`
     }
     .lineMask {
       overflow: hidden;
+      
     }
     @keyframes rotating {
         from {

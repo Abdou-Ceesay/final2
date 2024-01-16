@@ -45,11 +45,13 @@ html, body {
 ::-moz-selection {
   background-color: var(--secondaryColor);
   color: var(--black);
+  -webkit-text-fill-color: var(--black);
 }
 
 ::selection {
   background-color: var(--secondaryColor);
   color: var(--black);
+  -webkit-text-fill-color: var(--black);
 }
 
 .container {
@@ -82,6 +84,10 @@ h1, h2, h3 {
   text-align: center;
   font-size: 44px;
   padding: var(--padding);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.379) 35%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*  SCROLLBAR   */
@@ -104,6 +110,9 @@ h1, h2, h3 {
 .project-title h1 {
   font-size: 44px;
   margin-bottom: 20px;
+  background-image: linear-gradient(270deg, black, white 69%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .project-title h2 {
   font-size: 24px;

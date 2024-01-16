@@ -7,7 +7,7 @@ import sphere2 from "../../assets/img/sphere2.png"
 const StyledFooter = styled.div`
     width: 100%;
     height: 100vh;
-    background-color:var(--gray);
+    background-color:var(--black);
     position: sticky;
     bottom: 0;
     left: 0;
