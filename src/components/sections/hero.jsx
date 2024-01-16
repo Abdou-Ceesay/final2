@@ -37,7 +37,7 @@ const StyledHero = styled.div`
     .blur1 {
       position: absolute;
       left:-20%;
-      transform: scale(1.4);
+      transform: scale(1.39);
       pointer-events: none;
       opacity: .5;
     }
