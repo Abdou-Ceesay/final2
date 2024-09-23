@@ -1,7 +1,11 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import img1 from "../../assets/img/zoom65-blue.webp"
+import img1 from "../../assets/img/zoom65-blue.webp";
+import img2 from "../../assets/img/zoom1.png";
+import img3 from "../../assets/img/zoom2.png";
+import img4 from "../../assets/img/zoom4.png";
 import Navbar from '../../components/sections/navbar';
+import styled from 'styled-components';
 
 const fadeUp = {
     initial: {y: "-50%", opacity:0},
@@ -21,6 +25,13 @@ function zoom(props, id) {
     </motion.div>
     <div className="project-img-wrapper">
         <motion.img layoutId='zoomimg' src={img1} transition={{ease: [0.76, 0, 0.24, 1], duration: .75}} alt="zoom" />
+    </div>
+    <div className="container-small">
+      <div className="two-col-img">
+         <img src={img2} alt="" />
+         <img src={img3} alt="" />
+      </div>
+      
     </div>
     
     </>

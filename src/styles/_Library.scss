@@ -39,7 +39,7 @@ html, body {
     --xxl-sizing: 120px; 
     --padding : 50px;
 
-    --spacer:72px;
+    --spacer:80px;
 }
 ::selection {
     background-color: var(--secondaryColor);
@@ -50,6 +50,11 @@ html, body {
     width: 95%;
     margin: 0 auto;
 }
+.container-small {
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
     font-family:'Bai Jamjuree', sans-serif;
     background-color: var(--black);

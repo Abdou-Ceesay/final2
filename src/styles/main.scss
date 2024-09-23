@@ -2,6 +2,7 @@
 @import "Responsive";
 
 .project-title {
+    margin-top: var(--spacer);
     display: flex;
     padding: var(--padding);
     flex-direction: column;
@@ -30,5 +31,15 @@
     img {
         object-fit: cover;
         // width: 100%;
+    }
+}
+
+.two-col-img {
+    margin: var(--spacer) ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 48%;
     }
 }
