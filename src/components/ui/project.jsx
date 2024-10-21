@@ -89,7 +89,7 @@ const StyledProject = styled.div`
     &:hover p {
         transform: translateX(10px);
     }
-
+    
     
 `
 const StyledMobile = styled.div`
@@ -137,7 +137,7 @@ function Project(props) {
         </Link>
 
         <Link to={props.path} className='project-mobile'>
-            <StyledMobile>
+            <StyledMobile data-aos="fade-up">
                 <div className="project-cover-m">
                     <img src={props.img}/>
                 </div>

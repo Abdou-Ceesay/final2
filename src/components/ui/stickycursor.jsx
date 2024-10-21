@@ -21,6 +21,11 @@ const StyledCursor = styled.div`
       position: fixed;
       transform: scale(0.8);
     }
+    @media only screen and (max-width: 468px) {
+      .cursor-img{
+        display: none;
+      }
+    }
 `
 
 function Stickycursor() {

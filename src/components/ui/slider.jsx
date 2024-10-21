@@ -25,6 +25,15 @@ width: 100%;
         display: flex;
         align-items: center;
     }
+    @media only screen and (max-width: 468px) {
+        padding: 1px;
+        h2 {
+            font-size: 28px;
+        }
+        .star {
+        transform: scale(0.3);
+    }
+    }
 `
 
 function slider() {
@@ -32,7 +41,7 @@ function slider() {
     <Slider>
         <Splide options={{
         type: "loop",
-        gap: "10px",
+        gap: "5px",
         drag: "free",
         arrows: false,
         pagination: false,

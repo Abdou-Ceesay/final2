@@ -94,7 +94,72 @@ const StyledFooter = styled.div`
       }
 
     }
+    @media only screen and (max-width: 468px)  {
+      .copyright {
+        text-align: center;
+        position: absolute;
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .filigranne {
+        transform: scale(0.7);
+        right: -40%;
+        left: auto;
+        bottom: 10%;
+      }
+      .footer-content{
+        padding: 0 0px;
+        flex-direction: column-reverse;
 
+        .footer-right {
+          width: 100%;
+          margin-bottom: 56px;
+              ul li {
+              width: 100%;
+              font-size: 21px;
+              margin: 0px 0;
+              display: flex;
+              border-bottom: 1px solid #ffffff30;
+              
+              
+              a {
+                width: 100%;
+                padding: 38px 30px;
+                transition: all 250ms ease-out;
+                /* padding: 60px 0; */
+                &:hover {
+                  background-color: #ffffff05;
+                }
+                &:hover {
+                  padding-left: 40px;
+                }
+                
+              }
+            }
+        }
+        .footer-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+          font-size: 28px;
+          border: 1px solid;
+          background-color: var(--secondaryColor);
+            color:#111111;
+            border-color: var(--secondaryColor);
+          padding: 20px 50px;
+          border-radius: 60px;
+          transition: 200ms ease-in;
+          &:hover {
+            background-color: var(--secondaryColor);
+            color:#111111;
+            border-color: var(--secondaryColor);
+          }
+        }
+      }
+      }
+    }
 `
 
 function footer() {

@@ -59,7 +59,14 @@ width: 100%;
         /* text-decoration : line-through; */
         opacity: 100%;
     }
-    
+    @media only screen and (max-width: 468px) {
+        .nav-motion{
+            padding: 20px 30px;
+        }
+        .nav-menu {
+            display: none;
+        }
+    }
 `
 
 function Navbar() {

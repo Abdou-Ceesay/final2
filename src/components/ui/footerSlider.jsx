@@ -25,6 +25,15 @@ width: 100%;
         display: flex;
         align-items: center;
     }
+    @media only screen and (max-width: 468px)  {
+        padding: 9px 0;
+        h2 {
+            font-size: 32px;
+        }
+        .star {
+        transform: scale(0.4);
+    }
+    }
 `
 
 function footerSlider() {
@@ -32,7 +41,7 @@ function footerSlider() {
     <Slider>
         <Splide options={{
         type: "loop",
-        gap: "10px",
+        gap: "7px",
         drag: "free",
         arrows: false,
         pagination: false,

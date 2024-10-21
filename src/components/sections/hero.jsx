@@ -72,6 +72,7 @@ const StyledHero = styled.div`
         line-height :110%;
         background-image:linear-gradient(270deg, black, white 69%);
         background-clip: text;
+        color: #fff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -135,6 +136,23 @@ const StyledHero = styled.div`
       }
       .blur1 {
         transform: scale(.8);
+      }
+    }
+  }
+  @media only screen and (max-width: 468px)  {
+    .hero-main {
+      padding-left: 30px;
+      .stars {
+        transform: scale(.4);
+        top: 9%;
+      }
+      .hero-text {
+        h1 {
+          font-size: 38px;
+          background-image: none;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: #fff;
+        }
       }
     }
   }

@@ -35,6 +35,13 @@ const StyledFeatured = styled.div`
         opacity: .5;
         pointer-events: none;
     }
+    @media only screen and (max-width: 468px) {
+        padding-top : 20px;
+        .project-title-m {
+            font-size: 12px;
+            padding: 36px 20px;
+        }
+    }
 `
 const transition = { duration:3, ease: [0.43, 0.13, 0.23, 0.96]};
 

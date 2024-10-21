@@ -53,7 +53,7 @@ const StyledGallery = styled.div`
             padding: calc(var(--xl-sizing) * 1.5) var(--padding);
         }
         .gallery-row {
-            width: 200vw !important;
+            width: 300vw !important;
         }
 }
 

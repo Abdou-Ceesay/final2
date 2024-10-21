@@ -88,11 +88,8 @@ h1, h2, h3 {
 .section-title {
   text-align: center;
   font-size: 44px;
+  color: var(--white);
   padding: var(--padding);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.379) 35%, white 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /*  SCROLLBAR   */
@@ -105,6 +102,12 @@ h1, h2, h3 {
   background: var(--secondaryColor);
 }
 
+@media only screen and (max-width: 468px) {
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+}
 .project-title {
   margin-top: var(--spacer);
   display: flex;
@@ -140,7 +143,7 @@ h1, h2, h3 {
 }
 
 .two-col-img {
-  margin: var(--spacer) 0;
+  margin: var(--spacer);
   width: 100%;
   display: flex;
   justify-content: space-between;
