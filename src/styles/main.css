@@ -107,7 +107,14 @@ h1, h2, h3 {
     font-size: 28px;
     margin-bottom: 28px;
   }
+  .project-title h1 {
+    font-size: 2px;
+  }
 }
+body {
+  overflow-x: hidden;
+}
+
 .project-title {
   margin-top: var(--spacer);
   display: flex;
@@ -115,6 +122,13 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   gap: var(--xs-sizing);
+}
+.project-title .blur2 {
+  position: absolute;
+  left: -20%;
+  transform: scale(1.4);
+  pointer-events: none;
+  opacity: 0.4;
 }
 .project-title h1 {
   font-size: 44px;
@@ -136,18 +150,62 @@ h1, h2, h3 {
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 .project-img-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .two-col-img {
-  margin: var(--spacer);
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .two-col-img img {
-  width: 48%;
+  width: 49%;
+}
+
+@media only screen and (max-width: 468px) {
+  .project-title {
+    padding: 30px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .project-title .blur2 {
+    position: absolute;
+    left: -20%;
+    transform: scale(1.4);
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  .project-title h1 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .project-title h2 {
+    font-size: 16px;
+  }
+  .project-img-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-bottom: 50px;
+  }
+  .container-small {
+    width: 95%;
+  }
+  .two-col-img {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .two-col-img img {
+    width: 96%;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -37,16 +37,16 @@ requestAnimationFrame(raf)
     
       <ProgressBar/>
       <StickyCursor/>
+      
       <Router>  
-        
-        <Navbar/>
-        <AnimatePresence mode='wait'>
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/zoom-65' element={<Zoom />}></Route>
-        </Routes>
-        </AnimatePresence>
-
+      <ScrollToTop />
+                  <Navbar/>
+                  <AnimatePresence mode='wait'>
+                  <Routes>
+                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/zoom-65' element={<Zoom />}></Route>
+                  </Routes>
+                  </AnimatePresence>
       </Router>
     </>
   );

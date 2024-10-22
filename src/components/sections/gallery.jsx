@@ -56,7 +56,9 @@ const StyledGallery = styled.div`
             width: 300vw !important;
         }
 }
-
+@media only screen and (max-width: 468px) {
+    overflow-x: hidden;
+}
 `
 
 function Gallery() {
