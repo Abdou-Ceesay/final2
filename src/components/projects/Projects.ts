@@ -1,5 +1,5 @@
 import Zoom from "../../assets/img/zoom65-blue.webp"
-import Waak from "../../assets/img/waak/jersey_vjr_1.avif"
+import Waak from "../../assets/img/waak/STILL_1_FRONT.png"
 import Oneclock from "../../assets/img/oneclock-inside-angle.webp"
 import Dior from "../../assets/img/dior.webp"
 import Autonomous from "../../assets/img/autonomous.webp"
@@ -32,14 +32,14 @@ export const projects: Iprojects[] = [
       path: "/zoom-65",
       id: "zoom",
     },
-    {
-      title: "OneClock - Alarm clock",
-      img: Oneclock,
-      tag:"3d Styleframes",
-      color: "#000000",
-      path: "/oneclock",
-      id: "oneclock",
-    },
+    // {
+    //   title: "OneClock - Alarm clock",
+    //   img: Oneclock,
+    //   tag:"3d Styleframes",
+    //   color: "#000000",
+    //   path: "/oneclock",
+    //   id: "oneclock",
+    // },
     {
       title: "dior Homme",
       img: Dior,
