@@ -1,4 +1,5 @@
 import Zoom from "../../assets/img/zoom65-blue.webp"
+import Waak from "../../assets/img/waak/jersey_vjr_1.avif"
 import Oneclock from "../../assets/img/oneclock-inside-angle.webp"
 import Dior from "../../assets/img/dior.webp"
 import Autonomous from "../../assets/img/autonomous.webp"
@@ -15,6 +16,14 @@ export interface Iprojects {
 
 export const projects: Iprojects[] = [
 
+    {
+      title: "WAAK Clothing",
+      img: Waak,
+      tag:"3d Animation",
+      color: "#000000",
+      path: "/waak",
+      id: "waak",
+    },
     {
       title: "Zoom65 Mechanical keyboard",
       img: Zoom,

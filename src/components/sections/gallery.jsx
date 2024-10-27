@@ -11,6 +11,7 @@ import gallery5 from "../../assets/img/gallery5.webp"
 import gallery6 from "../../assets/img/gallery6.webp"
 import gallery7 from "../../assets/img/gallery7.webp"
 import gallery8 from "../../assets/img/gallery8.webp"
+import gallery9 from "../../assets/img/gallery9.webp"
 
 const StyledGallery = styled.div`
     .gallery-container {
@@ -77,7 +78,7 @@ function Gallery() {
         <div className="gallery-container" ref={container}>
             <motion.div style={{x: x1}} className="gallery-row">
                 <div className="gallery-item"><img src={gallery7} alt="valhalla ui design" /></div>
-                <div className="gallery-item"><img src={gallery8} alt="valhalla ui design" /></div>
+                <div className="gallery-item"><img src={gallery9} alt="valhalla ui design" /></div>
                 <div className="gallery-item"><img src={gallery5} alt="valhalla ui design" /></div>
                 <div className="gallery-item"><img src={gallery4} alt="valhalla ui design" /></div>
             </motion.div>

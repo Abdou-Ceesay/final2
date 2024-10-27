@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import FooterSlider from '../ui/footerSlider'
+import GsapMagnetic from '../magnetic/Magnetic'
 
 import sphere2 from "../../assets/img/sphere2.png"
 
@@ -180,7 +181,10 @@ function footer() {
             </ul>
           </div>
        </div>
+       <GsapMagnetic>
        <p className='copyright'>© 2023 Abdoulaye Cisse</p>
+       </GsapMagnetic>
+      
     </StyledFooter>
   )
 }

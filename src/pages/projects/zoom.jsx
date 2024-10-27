@@ -7,6 +7,7 @@ import img4 from "../../assets/img/zoom4.png";
 import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
 import blur2 from "../../assets/img/Vector 4.png"
+import Stairs from '../../components/transition/stairs';
 
 const fadeUp = {
     initial: {y: "-50%", opacity:0},
@@ -14,13 +15,13 @@ const fadeUp = {
     closed: {y: "-50%", opacity:0},
 }
 
-function zoom(props, id) {
-    const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.6};
+function zoom() {
+    const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:0};
 
     
   return (
-    <>
-    <motion.div className="project-title" variants={fadeUp} initial="initial"  animate="enter" transition={transition}>
+    <Stairs>
+    <motion.div className="project-title" >
     <h1>Zoom65 Mechanical Keyboard</h1>
     <h2 className='project-role'>Role : Modeling / rendering / texturing / lighting</h2>
     <img className='blur2' src={blur2} />
@@ -36,7 +37,7 @@ function zoom(props, id) {
       
     </div>
     
-    </>
+    </Stairs>
     
   )
 }

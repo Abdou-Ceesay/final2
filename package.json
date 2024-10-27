@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@waaark/luge": "^0.6.18-beta",
     "aos": "^3.0.0-beta.6",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.18.0",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

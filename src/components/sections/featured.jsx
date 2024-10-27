@@ -59,7 +59,7 @@ function Featured() {
         <StyledFeatured>
         <Modal modal={modal} projects={projects}/>
 
-            <motion.h1 className='section-title' exit={{opacity:0}} transition={transition} data-aos="fade-in">Featured works</motion.h1>  
+            <motion.h1 className='section-title' exit={{opacity:0}} transition={transition} data-aos="fade-up">Featured works</motion.h1>  
             <div className="projects">
                 
                 {

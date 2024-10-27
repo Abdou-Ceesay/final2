@@ -6,6 +6,7 @@ import StickyCursor from './components/ui/stickycursor';
 import ProgressBar from './components/ui/ProgressBar';
 import Navbar from './components/sections/navbar';
 import Home from './pages/Home';
+import Work from './pages/Work';
 import ScrollToTop from './components/ScrollToTop';
 
 // PROJECTS //
@@ -16,6 +17,7 @@ import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
+  const location = useLocation();
 
   useEffect(()=>{
     const lenis = new Lenis({
@@ -37,17 +39,18 @@ requestAnimationFrame(raf)
     
       <ProgressBar/>
       <StickyCursor/>
-      
-      <Router>  
+      <AnimatePresence mode='wait'>
       <ScrollToTop />
+                  
                   <Navbar/>
-                  <AnimatePresence mode='wait'>
-                  <Routes>
+
+                  <Routes location={location} key={location.pathname}>
                     <Route path='/' element={<Home />}></Route>
+                    <Route path='/work' element={<Work />}></Route>
                     <Route path='/zoom-65' element={<Zoom />}></Route>
                   </Routes>
-                  </AnimatePresence>
-      </Router>
+             
+      </AnimatePresence>
     </>
   );
 }
