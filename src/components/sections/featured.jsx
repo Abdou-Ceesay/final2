@@ -17,6 +17,7 @@ const StyledFeatured = styled.div`
     background-color: #070707;
     position: relative;
     z-index: 3;
+    overflow-x:  hidden;
     .projects {
         display: flex;
         flex-direction: column;

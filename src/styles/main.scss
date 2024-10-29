@@ -1,8 +1,9 @@
 @import "Library";
 @import "Responsive";
 
-body {
+.root {
     overflow-x: hidden;
+    position: relative;
 }
 
 .project-title {

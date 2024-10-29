@@ -13,6 +13,7 @@ import blur1 from "../../assets/img/Vector 3.png"
 
 const StyledHero = styled.div`
     background-color: #070707;
+    overflow-x: hidden;
     background-size: 100px 100px;
     background-image:
       linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
