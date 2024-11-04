@@ -15,7 +15,7 @@ width: 100%;
     /* position: absolute; */
     h2 {
         font-size: 48px;
-        font-weight: 500;
+        /* font-weight: 500; */
         color: #ffffff70;
     }
     .star {

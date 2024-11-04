@@ -78,8 +78,11 @@ li {
     list-style: none;
 }
 a {
+    font-family: "Stratos", sans-serif;
     text-decoration: none;
     color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 h1, h2, h3 {
     // font-family: "Osiris", "Neue Haas", sans-serif;

@@ -40,7 +40,8 @@ const StyledFooter = styled.div`
     }
     .footer-content {
       margin-top: 60px;
-      font-family: 'Osiris', sans-serif;
+      /* font-family: 'Osiris', sans-serif; */
+      font-family: "Stratos", sans-serif;
       width: 100%;
       padding: 0 var(--padding);
       flex-direction: row ;
