@@ -5,10 +5,12 @@ import { projects } from '../../components/projects/Projects.ts'
 import ProjectInfos from '../../components/projectInfos.jsx';
 
 import img1 from "../../assets/img/waak/anim1.webm";
-import img2 from "../../assets/img/waak/STILL_1_FRONT.png";
-import img3 from "../../assets/img/waak/STILL_1_BACK.png";
-import img4 from "../../assets/img/waak/STILL_2_BACK.png";
-import img5 from "../../assets/img/waak/STILL_2_FRONT.png";
+import img2 from "../../assets/img/waak/STILL_1_FRONT.webp";
+import img3 from "../../assets/img/waak/STILL_1_BACK.webp";
+import img4 from "../../assets/img/waak/STILL_2_BACK.webp";
+import img5 from "../../assets/img/waak/STILL_2_FRONT.webp";
+import img6 from "../../assets/img/waak/STILL_3_FRONT.webp";
+import img7 from "../../assets/img/waak/STILL_3_BACK.webp";
 // import img4 from "../../assets/img/zoom4.png";
 import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
@@ -54,6 +56,10 @@ function Waak() {
         
          
       </div>
+      <motion.div className="two-col-img" data-aos="fade-up">
+         <img src={img6} alt="" />
+         <img src={img7} alt="" />
+      </motion.div>
 
       {/* <div className="two-col-img">
       <div className="video">
