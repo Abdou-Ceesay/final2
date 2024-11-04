@@ -13,7 +13,7 @@ import blur1 from "../../assets/img/Vector 3.png"
 
 const StyledHero = styled.div`
     background-color: #070707;
-    overflow-x: hidden;
+    overflow: hidden;
     background-size: 100px 100px;
     background-image:
       linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
@@ -69,7 +69,7 @@ const StyledHero = styled.div`
       transform: scale(.8);
     }
     h1 {
-        font-size: 72px;
+        font-size: 6rem;
         line-height :110%;
         background-image:linear-gradient(270deg, black, white 69%);
         background-clip: text;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500&display=swap');
 @font-face {
     font-family:  "Neue Haas";
@@ -6,6 +7,16 @@
 @font-face {
     font-family:  "Osiris";
     src: url(../assets/fonts/Osiris.woff2);
+}
+@font-face {
+    font-family:  "Stratos";
+    src: url(../assets/fonts/stratosweb-bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family:  "Stratos";
+    src: url(../assets/fonts/stratosweb-regular.woff);
+    font-weight: normal;
 }
 @font-face {
     font-family:  "Kusanagi";
@@ -51,12 +62,13 @@ html, body {
     margin: 0 auto;
 }
 .container-small {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
 body {
-    font-family:'Bai Jamjuree', sans-serif;
+    // font-family:'Bai Jamjuree', sans-serif;
+    font-family: "Stratos", sans-serif;
     background-color: var(--black);
     color: var(--white);
     overflow-x: hidden;
@@ -70,13 +82,16 @@ a {
     color: var(--white);
 }
 h1, h2, h3 {
-    font-weight: 500;
-    font-family: "Osiris", "Neue Haas", sans-serif;
+    // font-family: "Osiris", "Neue Haas", sans-serif;
+    // font-family: "Hanken Grotesk", sans-serif;
+    font-family: "Stratos", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .section-title {
     text-align: center;
-    font-size: 44px;
+    font-size: 3rem;
     color: var(--white);
     padding: var(--padding);
     // background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.379) 35%, white 50%);

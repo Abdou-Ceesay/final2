@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500&display=swap");
 @font-face {
   font-family: "Neue Haas";
@@ -6,6 +7,16 @@
 @font-face {
   font-family: "Osiris";
   src: url(../assets/fonts/Osiris.woff2);
+}
+@font-face {
+  font-family: "Stratos";
+  src: url(../assets/fonts/stratosweb-bold.woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Stratos";
+  src: url(../assets/fonts/stratosweb-regular.woff);
+  font-weight: normal;
 }
 @font-face {
   font-family: "Kusanagi";
@@ -60,12 +71,12 @@ html, body {
 }
 
 .container-small {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Stratos", sans-serif;
   background-color: var(--black);
   color: var(--white);
   overflow-x: hidden;
@@ -81,13 +92,14 @@ a {
 }
 
 h1, h2, h3 {
-  font-weight: 500;
-  font-family: "Osiris", "Neue Haas", sans-serif;
+  font-family: "Stratos", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .section-title {
   text-align: center;
-  font-size: 44px;
+  font-size: 3rem;
   color: var(--white);
   padding: var(--padding);
 }
@@ -116,38 +128,48 @@ h1, h2, h3 {
   position: relative;
 }
 
-.project-title {
-  margin-top: var(--spacer);
+.project-info {
+  position: relative;
   display: flex;
+  margin-top: var(--spacer);
   padding: var(--padding);
   flex-direction: column;
+  height: 60vh;
+  justify-content: space-between;
+}
+.project-info .project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--xs-sizing);
+  margin-bottom: 10%;
 }
-.project-title .blur2 {
-  position: absolute;
-  left: -20%;
-  transform: scale(1.4);
-  pointer-events: none;
-  opacity: 0.4;
+.project-info .project-title h1 {
+  font-size: 120px;
 }
-.project-title h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-  background-image: linear-gradient(270deg, black, white 69%);
-  -webkit-background-clip: text;
-          background-clip: text;
+.project-info .project-title h2 {
+  font-size: 100px;
 }
-.project-title h2 {
-  font-size: 24px;
+.project-info .about-client {
+  display: flex;
+}
+.project-info .about-client .description {
+  width: 50%;
+}
+.project-info .about-client .project-role {
+  width: 50%;
+}
+.project-info .about-client h2 {
+  width: 40%;
+  font-size: 12px;
+  text-transform: uppercase;
   font-family: "Neue Haas", sans-serif;
-  color: #636363;
 }
 
 .project-img-wrapper {
   width: 100vw;
   margin: 0 auto;
-  height: 60vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -164,9 +186,38 @@ h1, h2, h3 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 .two-col-img img {
+  height: 100vh;
   width: 49%;
+}
+.two-col-img .video {
+  width: 49%;
+  height: auto;
+  background-color: red;
+}
+.two-col-img .video video {
+  width: 100%;
+  height: auto;
+}
+
+.one-col-img {
+  width: 100%;
+}
+.one-col-img img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.one-col-img .video {
+  aspect-ratio: 1/1;
+  background-color: red;
+}
+.one-col-img .video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 468px) {
@@ -207,6 +258,5 @@ h1, h2, h3 {
   }
   .two-col-img img {
     width: 96%;
-    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

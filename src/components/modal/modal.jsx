@@ -102,7 +102,7 @@ function Modal({modal, projects}) {
 
                     const { src, color } = project
 
-                    return <motion.div initial={""}  className="modal" style={{backgroundColor: color}} key={`modal_${index}`} layoutId={project.id + "img"}>
+                    return <motion.div initial="initial"  className="modal" style={{backgroundColor: color}} key={`modal_${index}`}>
 
                                 <img
 
@@ -112,7 +112,7 @@ function Modal({modal, projects}) {
 
                                 alt="image"
                                 style={{
-                                    backgrouColor: "red",
+                                    backgroundColor: "red",
                                     width: "100%",
                                      height: "100%",
                                      objectFit: "cover",
