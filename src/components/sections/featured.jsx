@@ -16,7 +16,7 @@ const StyledFeatured = styled.div`
     padding-top : calc(var(--spacer) * 2);
     background-color: #070707;
     position: relative;
-    z-index: 3;
+    z-index: 5;
     overflow:  hidden;
     .projects {
         display: flex;

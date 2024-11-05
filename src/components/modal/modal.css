@@ -1,7 +1,7 @@
 .modalContainer {
     position:fixed;
     transform-origin: center;
-    z-index:1;
+    z-index:11;
     height: 354px;
     display: flex;
     align-items: center;

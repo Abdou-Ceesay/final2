@@ -15,6 +15,11 @@
 }
 @font-face {
   font-family: "Stratos";
+  src: url(../assets/fonts/stratosweb-thin.woff);
+  font-weight: thin;
+}
+@font-face {
+  font-family: "Stratos";
   src: url(../assets/fonts/stratosweb-regular.woff);
   font-weight: normal;
 }
@@ -167,6 +172,7 @@ h1, h2, h3 {
   font-size: 12px;
   text-transform: uppercase;
   font-family: "Neue Haas", sans-serif;
+  font-weight: 400;
 }
 
 .project-img-wrapper {
