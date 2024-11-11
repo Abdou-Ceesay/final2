@@ -31,9 +31,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 html {
-    scroll-behavior: initial !important;
+    scroll-behavior: initial;
+    
+}
+.root{
+    
+    position: relative;
 }
 html, body {
     min-height: 100%;

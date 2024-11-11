@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react';
+import {React, useEffect, useRef} from 'react';
 import './styles/main.css';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
@@ -19,6 +19,7 @@ import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
+  const cursorRef = useRef();
   const location = useLocation();
 
   useEffect(()=>{
@@ -26,7 +27,8 @@ function App() {
       duration:1.5,
     })
 
-
+    
+    
 
 function raf(time) {
   lenis.raf(time)
@@ -35,6 +37,8 @@ function raf(time) {
 
 requestAnimationFrame(raf)
   },[]);
+
+  
     
   return (
     <>

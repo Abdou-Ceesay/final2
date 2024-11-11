@@ -131,7 +131,7 @@ function Modal({modal, projects}) {
             </motion.div>
 
             <motion.div ref={cursor} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="modalCursor"></motion.div>
-            <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursorLabel">View</motion.div>
+            <motion.div ref={cursorLabel} variants={scaleAnimation} initial={"initial"} animate={active ? "enter" : "closed"} className="cursorLabel">View project</motion.div>
     </>
         
     

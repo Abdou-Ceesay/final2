@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-
 import blur2 from "../assets/img/Vector 4.png"
 
 const fadeDown = {
@@ -14,10 +13,10 @@ const fadeUp = {
     closed: {y: "50%", opacity:0},
 }
 
-function projectInfos(props) {
+function ProjectInfos(props) {
     const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:0};
-    const transition2 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
-    const transition3 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.8};    
+    const transition2 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.25};
+    const transition3 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.6};    
   return (
     <motion.div className="project-info" >
     <motion.div className="project-title" variants={fadeDown} initial="initial" animate="enter" transition={transition2}>
@@ -36,4 +35,4 @@ function projectInfos(props) {
   )
 }
 
-export default projectInfos
+export default ProjectInfos

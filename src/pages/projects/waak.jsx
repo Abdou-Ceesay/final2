@@ -33,7 +33,7 @@ const fadeUp = {
 function Waak() {
     const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:0};
     const transition2 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
-    const transition3 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.8};
+    const transition3 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
 
     useEffect(() => {
       AOS.init();
@@ -41,10 +41,10 @@ function Waak() {
 
   return (
     <Stairs>
-    <ProjectInfos title={projects.title} id={projects.id} img={projects.img} tag={projects.tag} path={projects.path}/>
-    <div className="project-img-wrapper">
-        <motion.img src={img2} variants={fadeUp} initial="initial" animate="enter" transition={transition3} alt="zoom" />
-    </div>
+    <ProjectInfos/>
+    <motion.div variants={fadeUp} initial="initial" animate="enter" transition={transition3} className="project-img-wrapper">
+        <img src={img2}  alt="zoom" />
+    </motion.div>
     <div className="container-small">
       <motion.div className="two-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
@@ -57,16 +57,9 @@ function Waak() {
          
       </div>
       <motion.div className="two-col-img" data-aos="fade-up">
-         <img src={img6} alt="" />
-         <img src={img7} alt="" />
-      </motion.div>
-
-      {/* <div className="two-col-img">
-      <div className="video">
-           <video src={img1}   autoPlay loop/>
-         </div>
+         <img src={img2} alt="" />
          <img src={img3} alt="" />
-      </div> */}
+      </motion.div>
       
     </div>
     

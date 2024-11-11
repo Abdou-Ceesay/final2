@@ -1,9 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import styled from 'styled-components'
-
+import { useLocation } from 'react-router-dom'
 
 const StyledStairs = styled.div `
+    
     .stairs {
         .transition-container {
             height: 100vh;
@@ -25,7 +26,9 @@ const StyledStairs = styled.div `
     
 `
 
+
 function Stairs({children}) {
+
     const anim = (variants, custom) => {
         return {
             initial: "initial",
@@ -62,22 +65,56 @@ function Stairs({children}) {
     }
 
     const nbOfColumns = 5;
+
+    const routes = {
+        "/" : "Home",
+        "/about" : "About",
+        "/waak" : "Waak",
+        "/work" : "Work"
+    }
+
+    const text = {
+        initial: {
+            opacity: 1,
+            
+        },
+        enter: {
+            opacity: 1,
+            top:0,
+            transition: {
+                duration: 0.4,
+                delay: 0,
+                ease: [0.22, 1, 0.36, 1],
+            },
+        },
+        exit : {
+            opacity: 1,
+            top:"40%",
+        }
+    }
   return (
-    <StyledStairs>
+    
 
     
-    <div className='page stairs'>
-        <div className="transition-container">
-            {
-                [...Array(nbOfColumns)].map((_, i) => {
-                    return <motion.div {...anim(expand, nbOfColumns - i)} key={i}/>
-                })
-            }
+     <StyledStairs>
+       
+    
+        <div className='page stairs'>
             
+            <div className="transition-container">
+                
+                {
+                    [...Array(nbOfColumns)].map((_, i) => {
+                        return <motion.div {...anim(expand, nbOfColumns - i)} key={i}/>
+                    })
+                }
+                
+            </div>
+           {[children]}
         </div>
-       {[children]}
-    </div>
-    </StyledStairs>
+        </StyledStairs>
+    
+   
   )
 
 }

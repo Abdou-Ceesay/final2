@@ -14,18 +14,22 @@ const StyledCursor = styled.div`
     pointer-events: none;
     z-index: 1;
 } */
-
+    z-index: 9;
     .cursor-img {
-      z-index: 4;
+      z-index: 5;
       pointer-events: none;
       position: fixed;
       transform: scale(0.8);
+    }
+    .hide {
+      opacity: 0;
     }
     @media only screen and (max-width: 468px) {
       .cursor-img{
         display: none;
       }
     }
+    
 `
 
 function Stickycursor() {
@@ -52,10 +56,12 @@ useEffect( () => {
     return () => {window.removeEventListener("mousemove", manageMouseMove)}
 })
 
+const cursorRef = useRef();
+
   return (
     <StyledCursor>
    
-        <motion.img src={cursor} className='cursor-img'  style={{left: smoothMouse.x, top: smoothMouse.y}}/>
+        <motion.img src={cursor} className='cursor-img' ref={cursorRef} style={{left: smoothMouse.x, top: smoothMouse.y}}/>
    
     </StyledCursor>
     

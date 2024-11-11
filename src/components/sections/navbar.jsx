@@ -47,7 +47,7 @@ width: 100%;
     
     .nav-menu {
         display: flex;
-        gap: var(--xs-sizing);
+        gap: 2rem;
     }
     .nav-item {
         opacity: 30%;

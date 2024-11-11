@@ -16,7 +16,7 @@ const StyledFeatured = styled.div`
     padding-top : calc(var(--spacer) * 2);
     background-color: #070707;
     position: relative;
-    z-index: 5;
+    z-index: 2;
     overflow:  hidden;
     .projects {
         display: flex;
@@ -27,13 +27,14 @@ const StyledFeatured = styled.div`
         justify-content: center;
     }
    
-    .blur2 {
+    .blur3 {
         position: absolute;
+        top: 10%;
         right: -20%;
-        transform: scale(1);
+        transform: scale(1.2);
         bottom: 0;
         z-index: 2;
-        opacity: .5;
+        opacity: .3;
         pointer-events: none;
     }
     @media only screen and (max-width: 468px) {
@@ -60,7 +61,7 @@ function Featured() {
         <StyledFeatured>
         <Modal modal={modal} projects={projects}/>
 
-            <motion.h1 className='section-title' exit={{opacity:0}} transition={transition} data-aos="fade-up">Featured works</motion.h1>  
+            <motion.h1 className='section-title' transition={transition} data-aos="fade-up">Featured works</motion.h1>  
             <div className="projects">
                 
                 {
@@ -71,7 +72,7 @@ function Featured() {
              
             </div>
             
-           <img className='blur2' src={blur2} />
+           <img className='blur3' src={blur2} />
         </StyledFeatured>
         
     </>
