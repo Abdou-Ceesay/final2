@@ -52,7 +52,7 @@ function Cola() {
     </motion.div>
     
     <div className="container-small">
-      <motion.div className="two-col-img" data-aos="fade-up">
+      <motion.div className="one-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
       </motion.div>
       
