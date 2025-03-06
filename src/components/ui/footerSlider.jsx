@@ -51,10 +51,28 @@ function footerSlider() {
           pauseOnHover: false,
           pauseOnFocus: false,
           rewind: false,
-          speed: 1.2
+          speed: 1
         }
       }}
       extensions={{ AutoScroll }}>
+            <SplideSlide>
+                <h2>Let's start creating</h2>
+            </SplideSlide>
+            <SplideSlide>
+                <img src={star} className="star" />
+            </SplideSlide>
+            <SplideSlide>
+                <h2>Let's start creating</h2>
+            </SplideSlide>
+            <SplideSlide>
+                <img src={star} className="star" />
+            </SplideSlide>
+            <SplideSlide>
+                <h2>Let's start creating</h2>
+            </SplideSlide>
+            <SplideSlide>
+                <img src={star} className="star" />
+            </SplideSlide>
             <SplideSlide>
                 <h2>Let's start creating</h2>
             </SplideSlide>

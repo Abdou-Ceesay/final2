@@ -5,10 +5,7 @@ import { projects } from '../../components/projects/Projects.ts'
 import ProjectInfos from '../../components/projectInfos.jsx';
 
 import img1 from "../../assets/img/waak/anim1.webm";
-import img2 from "../../assets/img/zoom65-blue.webp";
-import img3 from "../../assets/img/zoom1.png";
-import img4 from "../../assets/img/zoom4.png";
-import img5 from "../../assets/img/zoom2.png";
+import img2 from "../../assets/img/AC/AMERICAN_COLA_1.jpg";
 
 import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
@@ -28,7 +25,7 @@ const fadeUp = {
 
 
 
-function Zoom() {
+function Cola() {
     const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:0};
     const transition2 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
     const transition3 = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
@@ -41,8 +38,8 @@ function Zoom() {
     <Stairs>
     <motion.div className="project-info" >
     <motion.div className="project-title" variants={fadeDown} initial="initial" animate="enter" transition={transition2}>
-    <h1 className='client'>Zoom65</h1>
-    <h2 className='year'>2024</h2>
+    <h1 className='client'>American Cola</h1>
+    <h2 className='year'>2025</h2>
     </motion.div>
     
     {/* <motion.div className="about-client" variants={fadeDown} initial="initial" animate="enter" transition={transition3}>
@@ -57,13 +54,7 @@ function Zoom() {
     <div className="container-small">
       <motion.div className="two-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
-         <img src={img3} alt="" />
       </motion.div>
-      <div className="one-col-img" >
-         <img src={img4} alt="" data-aos="fade-up"/>
-         <img src={img5} alt="" data-aos="fade-up"/> 
-      </div>
-      
       
     </div>
     
@@ -72,4 +63,4 @@ function Zoom() {
   )
 }
 
-export default Zoom
+export default Cola

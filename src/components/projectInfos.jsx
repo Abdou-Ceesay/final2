@@ -24,11 +24,11 @@ function ProjectInfos(props) {
     <h2 className='year'>2024</h2>
     </motion.div>
     
-    <motion.div className="about-client" variants={fadeDown} initial="initial" animate="enter" transition={transition3}>
+    {/* <motion.div className="about-client" variants={fadeDown} initial="initial" animate="enter" transition={transition3}>
     <div className="description"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus congue leo tincidunt cursus. Pellentesque finibus magna pharetra dolor efficitur, ultrices interdum lacus porttitor. </h2></div>
     <div className="project-role"><h2>Role :<br/> Modeling / rendering / texturing / lighting</h2></div>
 
-    </motion.div>
+    </motion.div> */}
     
     <img className='blur2' src={blur2} />
     </motion.div>

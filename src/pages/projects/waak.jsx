@@ -42,9 +42,7 @@ function Waak() {
   return (
     <Stairs>
     <ProjectInfos/>
-    <motion.div variants={fadeUp} initial="initial" animate="enter" transition={transition3} className="project-img-wrapper">
-        <img src={img2}  alt="zoom" />
-    </motion.div>
+    
     <div className="container-small">
       <motion.div className="two-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
@@ -52,14 +50,9 @@ function Waak() {
       </motion.div>
       <div className="one-col-img" >
          <img src={img4} alt="" data-aos="fade-up"/>
-         <img src={img5} alt="" data-aos="fade-up"/>
-        
-         
+         <img src={img5} alt="" data-aos="fade-up"/> 
       </div>
-      <motion.div className="two-col-img" data-aos="fade-up">
-         <img src={img2} alt="" />
-         <img src={img3} alt="" />
-      </motion.div>
+      
       
     </div>
     

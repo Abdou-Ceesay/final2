@@ -85,9 +85,9 @@ function Navbar() {
         <GsapMagnetic>
             <li><Link className='nav-item active' to="/">( Home )</Link></li>
         </GsapMagnetic>
-        <GsapMagnetic>
+        {/* <GsapMagnetic>
             <li><Link className='nav-item' to="/work">( Work )</Link></li>
-        </GsapMagnetic>
+        </GsapMagnetic> */}
         <GsapMagnetic>
             <li><Link className='nav-item' to="/contact">( Contact )</Link></li>
         </GsapMagnetic>    
