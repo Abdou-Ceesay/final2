@@ -181,6 +181,7 @@ h1, h2, h3 {
 
 .blur2 {
   position: absolute;
+  overflow: hidden;
   left: -20%;
   transform: scale(1.4);
   pointer-events: none;

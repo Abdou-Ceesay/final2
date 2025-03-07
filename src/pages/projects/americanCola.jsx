@@ -54,7 +54,7 @@ function Cola() {
 
     </motion.div> */}
     
-    <img className='blur2' src={blur2} />
+    {/* <img className='blur2' src={blur2} /> */}
     </motion.div>
     
     <div className="container-small">
