@@ -154,7 +154,6 @@ h1, h2, h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 10%;
 }
 .project-info .project-title h1 {
@@ -254,8 +253,9 @@ h1, h2, h3 {
     height: 20vh;
   }
   .project-title {
-    padding: 30px;
-    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: left !important;
     flex-direction: column !important;
     margin-bottom: 10px;
   }
@@ -267,7 +267,7 @@ h1, h2, h3 {
     opacity: 0.4;
   }
   .project-title h1 {
-    font-size: 44px !important;
+    font-size: 40px !important;
     margin-bottom: 20px;
   }
   .project-title h2 {
