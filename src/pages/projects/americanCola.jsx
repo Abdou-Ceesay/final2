@@ -66,12 +66,12 @@ function Cola() {
          <img src={img4} alt="" />
       </motion.div>
       <motion.div className="two-col-img" data-aos="fade-up">
-         <video className='video' loop autoPlay src={img5} alt="" />
-         <video className='video' loop autoPlay src={img6} alt="" />
+         <video className='video' loop autoPlay playsInline src={img5} alt="" />
+         <video className='video' loop autoPlay playsInline src={img6} alt="" />
       </motion.div>
       <motion.div className="two-col-img" data-aos="fade-up">
       <img src={img8} alt="" />
-      <video className='video' loop autoPlay src={img7} alt="" />
+      <video className='video' loop autoPlay playsInline src={img7} alt="" />
       </motion.div>
     </div>
     
