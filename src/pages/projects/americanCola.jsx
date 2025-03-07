@@ -6,6 +6,12 @@ import ProjectInfos from '../../components/projectInfos.jsx';
 
 import img1 from "../../assets/img/waak/anim1.webm";
 import img2 from "../../assets/img/AC/AMERICAN_COLA_1.jpg";
+import img3 from "../../assets/img/AC/viewport.png";
+import img4 from "../../assets/img/AC/viezport3.png";
+import img5 from "../../assets/img/AC/always.webm";
+import img6 from "../../assets/img/AC/viewport2.webm";
+import img7 from "../../assets/img/AC/AC_TOAST.webm";
+import img8 from "../../assets/img/AC/AC_ST_VALENTIN_GROS_CARRE.webp";
 
 import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
@@ -55,7 +61,18 @@ function Cola() {
       <motion.div className="one-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
       </motion.div>
-      
+      <motion.div className="two-col-img" data-aos="fade-up">
+         <img src={img3} alt="" />
+         <img src={img4} alt="" />
+      </motion.div>
+      <motion.div className="two-col-img" data-aos="fade-up">
+         <video className='video' loop autoPlay src={img5} alt="" />
+         <video className='video' loop autoPlay src={img6} alt="" />
+      </motion.div>
+      <motion.div className="two-col-img" data-aos="fade-up">
+      <img src={img8} alt="" />
+      <video className='video' loop autoPlay src={img7} alt="" />
+      </motion.div>
     </div>
     
     </Stairs>
