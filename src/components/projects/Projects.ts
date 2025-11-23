@@ -4,6 +4,7 @@ import Oneclock from "../../assets/img/oneclock-inside-angle.webp"
 import Dior from "../../assets/img/dior.webp"
 import Autonomous from "../../assets/img/autonomous.webp"
 import AmericanCola from "../../assets/img/AC/AMERICAN_COLA_1.jpg"
+import Crocs from "../../assets/img/crocs/1.jpg"
 
 export interface Iprojects {
   title: string;
@@ -15,6 +16,14 @@ export interface Iprojects {
 }
 
 export const projects: Iprojects[] = [
+  {
+      title: "Crocs x Harry Potter",
+      img: Crocs,
+      tag:"3d Styleframes",
+      color: "#000000",
+      path: "/crocs",
+      id: "crocs",
+    },
 
     {
       title: "WAAK Clothing",
@@ -48,14 +57,15 @@ export const projects: Iprojects[] = [
     //   path: "/oneclock",
     //   id: "oneclock",
     // },
-    {
-      title: "dior Homme",
-      img: Dior,
-      tag:"3d Styleframes",
-      color: "#000000",
-      path: "/dior",
-      id: "dior",
-    },
+    // {
+    //   title: "dior Homme",
+    //   img: Dior,
+    //   tag:"3d Styleframes",
+    //   color: "#000000",
+    //   path: "/dior",
+    //   id: "dior",
+    // },
+    
     // {
     //   title: "Autonomous Smartdesk",
     //   img: Autonomous,

@@ -8,9 +8,11 @@ import Navbar from './components/sections/navbar';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
-import Waak from './pages/projects/waak'
-import Dior from './pages/projects/Dior'
-import Cola from './pages/projects/americanCola'
+import Waak from './pages/projects/waak';
+import Dior from './pages/projects/Dior';
+import Cola from './pages/projects/americanCola';
+import Crocs from './pages/projects/crocs';
+
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -61,6 +63,7 @@ requestAnimationFrame(raf)
                     <Route path='/zoom-65' element={<Zoom />}></Route>
                     <Route path='/dior' element={<Dior />}></Route>
                     <Route path='/american-cola' element={<Cola />}></Route>
+                    <Route path='/crocs' element={<Crocs />}></Route>
                   </Routes>
              
       </AnimatePresence>
