@@ -19,7 +19,7 @@ const StyledStairs = styled.div `
                 position: relative;
                 height: 100%;
                 width: 100%;
-                background-color: var(--gray);
+                background-color: var(--secondaryColor);
             }
         }
     }

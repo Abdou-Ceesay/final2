@@ -74,10 +74,12 @@ html, body {
     margin: 0 auto;
 }
 .container-small {
-    width: 95%;
+    width: 75%;
     margin: 0 auto;
 }
-
+.frame {
+    aspect-ratio: 16/9;
+}
 body {
     // font-family:'Bai Jamjuree', sans-serif;
     font-family: "Stratos", sans-serif;

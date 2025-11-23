@@ -56,6 +56,10 @@ function Crocs() {
     </motion.div>
     
     <div className="container-small">
+      <div className="one-col-img">
+<iframe className='frame' src="https://player.vimeo.com/video/1138526450?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" width="100%" aspect-ratio="16/9" frameborder="0" allow="autoplay; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+      </div>
+      
       <motion.div className="two-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
          <img src={img1} alt="" />

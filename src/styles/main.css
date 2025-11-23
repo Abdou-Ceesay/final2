@@ -80,8 +80,12 @@ html, body {
 }
 
 .container-small {
-  width: 95%;
+  width: 75%;
   margin: 0 auto;
+}
+
+.frame {
+  aspect-ratio: 16/9;
 }
 
 body {
@@ -214,7 +218,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   background-color: var(--black);
-  padding: 60px 0;
+  padding: 0px 0;
 }
 .two-col-img img {
   width: 49%;
