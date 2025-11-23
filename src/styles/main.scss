@@ -115,7 +115,7 @@
     display: flex;
     justify-content: space-between;
     background-color:var(--black);
-    // margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 0px 0;
     img {
         // height: 100vh;
@@ -132,13 +132,13 @@
     }
 }
 .one-col-img {
-    padding: 60px 0;
+    // padding: 60px 0;
     // height: 180px;
     background-color:var(--black);  
     width: 100%;
     img {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .video {
         aspect-ratio: 1/1;

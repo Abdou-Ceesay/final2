@@ -9,6 +9,8 @@ import img2 from "../../assets/img/crocs/2.jpg";
 import img3 from "../../assets/img/crocs/3.png";
 import img4 from "../../assets/img/crocs/4.png";
 import img5 from "../../assets/img/crocs/5.png";
+import img6 from "../../assets/img/crocs/STILL3.jpg";
+import img7 from "../../assets/img/crocs/STILL4.jpg";
 
 // import img4 from "../../assets/img/zoom4.png";
 import Navbar from '../../components/sections/navbar';
@@ -63,6 +65,10 @@ function Crocs() {
       <motion.div className="two-col-img" data-aos="fade-up">
          <img src={img2} alt="" />
          <img src={img1} alt="" />
+      </motion.div>
+      <motion.div className="two-col-img" data-aos="fade-up">
+         <img src={img6} alt="" />
+         <img src={img7} alt="" />
       </motion.div>
       <div className="one-col-img" >
          <img src={img3} alt="" data-aos="fade-up"/>
