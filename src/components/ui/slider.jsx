@@ -60,49 +60,66 @@ function slider() {
                 <h2>Branding</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
+
             </SplideSlide>
             <SplideSlide>
                 <h2>UI design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star"/>
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>3d Animation</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>Product design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>Branding</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>UI design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star"/>
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>3d Animation</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
             <SplideSlide>
                 <h2>Product design</h2>
             </SplideSlide>
             <SplideSlide>
-                <img src={star} className="star" />
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3236 28.0104V17.5701L1.92506 22.9963L0.750248 20.9615L10.3946 15.3933L0.162842 9.48597L1.33766 7.45113L11.3236 13.2165L11.3236 0.989655L13.6732 0.989655V13.5004L24.1509 7.45113L25.3257 9.48597L15.0939 15.3933L24.7383 20.9615L23.5635 22.9963L13.6732 17.2862V28.0104H11.3236Z" fill="var(--secondaryColor)"/>
+</svg>
             </SplideSlide>
         </Splide>
     </Slider>

@@ -5,6 +5,7 @@ import Dior from "../../assets/img/dior.webp"
 import Autonomous from "../../assets/img/autonomous.webp"
 import AmericanCola from "../../assets/img/AC/AMERICAN_COLA_1.jpg"
 import Crocs from "../../assets/img/crocs/1.jpg"
+import Jacob from "../../assets/img/jacob/3.png"
 
 export interface Iprojects {
   title: string;
@@ -23,6 +24,14 @@ export const projects: Iprojects[] = [
       color: "#000000",
       path: "/crocs",
       id: "crocs",
+    },
+  {
+      title: "Jacob & Co Casino Tourbillon",
+      img: Jacob,
+      tag:"3d Styleframes",
+      color: "#000000",
+      path: "/jacobandco",
+      id: "jacob",
     },
 
     {

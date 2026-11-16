@@ -12,6 +12,7 @@ import Waak from './pages/projects/waak';
 import Dior from './pages/projects/Dior';
 import Cola from './pages/projects/americanCola';
 import Crocs from './pages/projects/crocs';
+import Jacob from './pages/projects/jacob';
 
 
 import ScrollToTop from './components/ScrollToTop';
@@ -64,6 +65,7 @@ requestAnimationFrame(raf)
                     <Route path='/dior' element={<Dior />}></Route>
                     <Route path='/american-cola' element={<Cola />}></Route>
                     <Route path='/crocs' element={<Crocs />}></Route>
+                    <Route path='/jacobandco' element={<Jacob />}></Route>
                   </Routes>
              
       </AnimatePresence>
