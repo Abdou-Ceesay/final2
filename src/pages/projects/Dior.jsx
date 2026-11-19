@@ -10,6 +10,7 @@ import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
 import Stairs from '../../components/transition/stairs';
 import ProjectHeader from '../../components/projects/ProjectHeader';
+import ProjectGallery from '../../components/projects/ProjectGallery';
 
 const fadeDown = {
     initial: {y: "-50%", opacity:0},
@@ -36,6 +37,7 @@ function Dior() {
   return (
     <Stairs>
     <ProjectHeader id="dior" />
+    <ProjectGallery />
     
     <div className="container-small">
       <div className="one-col-img" >

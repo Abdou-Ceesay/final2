@@ -32,6 +32,8 @@ function App() {
     const lenis = new Lenis({
       duration:1.5,
     })
+    // lets other components (like the project gallery) pause smooth scrolling
+    window.__lenis = lenis
 
     
     
