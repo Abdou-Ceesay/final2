@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import AOS from 'aos';
 import { projects } from '../../components/projects/Projects.ts'
 import ProjectHeader from '../../components/projects/ProjectHeader';
+import ProjectGallery from '../../components/projects/ProjectGallery';
 
 import img1 from "../../assets/img/waak/anim1.webm";
 import img2 from "../../assets/img/waak/STILL_1_FRONT.webp";
@@ -41,6 +42,7 @@ function Waak() {
   return (
     <Stairs>
     <ProjectHeader id="waak" />
+    <ProjectGallery />
     
     <div className="container-small">
       <motion.div className="two-col-img" data-aos="fade-up">
