@@ -76,7 +76,7 @@ const StyledHero = styled.div`
       }
     }
     h1 {
-        font-size: 6rem;
+        font-size: clamp(34px, 7.4vw, 6rem);
         line-height :110%;
         background-image:linear-gradient(270deg, black, white 69%);
         background-clip: text;
@@ -126,12 +126,6 @@ const StyledHero = styled.div`
       }
       @media only screen and (max-width: 768px) {
     .hero-main {
-      .hero-text {
-        h1 {
-          font-size: 32px;
-          
-        }
-      }
       .stars {
         transform: scale(.6);
         transform-origin: left;
@@ -156,7 +150,6 @@ const StyledHero = styled.div`
       }
       .hero-text {
         h1 {
-          font-size: 38px;
           background-image: none;
         -webkit-background-clip: initial;
         -webkit-text-fill-color: #fff;

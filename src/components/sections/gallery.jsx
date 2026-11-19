@@ -14,6 +14,8 @@ import gallery8 from "../../assets/img/gallery8.webp"
 import gallery9 from "../../assets/img/gallery9.webp"
 
 const StyledGallery = styled.div`
+    /* the rows are wider than the screen on purpose (they slide on scroll); clip them here */
+    overflow-x: clip;
     .gallery-container {
         width: 100%;
         padding: calc(var(--xl-sizing) * 3) var(--padding);

@@ -7,7 +7,9 @@ import sphere2 from "../../assets/img/sphere2.png"
 
 const StyledFooter = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    /* keep the "Let's start creating" banner below the fixed navbar */
+    padding-top: 100px;
     background-color:var(--black);
     position: sticky;
     bottom: 0;
@@ -39,7 +41,7 @@ const StyledFooter = styled.div`
       bottom: 20px;
     }
     .footer-content {
-      margin-top: 60px;
+      margin-top: clamp(16px, 4vh, 60px);
       /* font-family: 'Osiris', sans-serif; */
       font-family: "Stratos", sans-serif;
       width: 100%;
@@ -53,9 +55,10 @@ const StyledFooter = styled.div`
         width: 40%;
         display: flex;
         a {
-          font-size: 44px;
+          font-size: clamp(24px, 3vw, 44px);
+          white-space: nowrap;
           border: 1px solid #fff;
-          padding: 30px 100px;
+          padding: clamp(20px, 2vw, 30px) clamp(40px, 5vw, 100px);
           border-radius: 60px;
           transition: 200ms ease-in;
           &:hover {
@@ -81,7 +84,7 @@ const StyledFooter = styled.div`
           
           a {
             width: 100%;
-            padding: 48px 30px;
+            padding: clamp(20px, 4.5vh, 48px) 30px;
             transition: all 250ms ease-out;
             /* padding: 60px 0; */
             &:hover {
@@ -96,7 +99,19 @@ const StyledFooter = styled.div`
       }
 
     }
+    @media only screen and (max-width: 900px) {
+      .footer-content {
+        flex-direction: column-reverse;
+        gap: var(--l-sizing);
+        .footer-left, .footer-right {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
     @media only screen and (max-width: 468px)  {
+      padding-top: 80px;
+      padding-bottom: 60px;
       .copyright {
         text-align: center;
         position: absolute;
@@ -116,7 +131,7 @@ const StyledFooter = styled.div`
 
         .footer-right {
           width: 100%;
-          margin-bottom: 56px;
+          margin-bottom: 32px;
               ul li {
               width: 100%;
               font-size: 21px;
@@ -127,7 +142,7 @@ const StyledFooter = styled.div`
               
               a {
                 width: 100%;
-                padding: 38px 30px;
+                padding: clamp(18px, 3.5vh, 38px) 30px;
                 transition: all 250ms ease-out;
                 /* padding: 60px 0; */
                 &:hover {

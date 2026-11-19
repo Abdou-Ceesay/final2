@@ -27,7 +27,7 @@ width: 100%;
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    padding: 20px 50px;
+    padding: 20px var(--padding);
     }
     .logo {
         position: relative;
@@ -61,10 +61,18 @@ width: 100%;
     }
     @media only screen and (max-width: 468px) {
         .nav-motion{
-            padding: 20px 30px;
+            height: 80px;
+            padding: 16px 20px;
+        }
+        a img {
+            width: 44px;
         }
         .nav-menu {
-            display: none;
+            gap: 0;
+        }
+        .nav-item {
+            padding: 12px 8px;
+            font-size: 13px;
         }
     }
 `
