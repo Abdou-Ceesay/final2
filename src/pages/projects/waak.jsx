@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import {motion} from 'framer-motion'
 import AOS from 'aos';
 import { projects } from '../../components/projects/Projects.ts'
-import ProjectInfos from '../../components/projectInfos.jsx';
+import ProjectHeader from '../../components/projects/ProjectHeader';
 
 import img1 from "../../assets/img/waak/anim1.webm";
 import img2 from "../../assets/img/waak/STILL_1_FRONT.webp";
@@ -14,7 +14,6 @@ import img7 from "../../assets/img/waak/STILL_3_BACK.webp";
 // import img4 from "../../assets/img/zoom4.png";
 import Navbar from '../../components/sections/navbar';
 import styled from 'styled-components';
-import blur2 from "../../assets/img/Vector 4.png"
 import Stairs from '../../components/transition/stairs';
 
 const fadeDown = {
@@ -41,7 +40,7 @@ function Waak() {
 
   return (
     <Stairs>
-    <ProjectInfos/>
+    <ProjectHeader id="waak" />
     
     <div className="container-small">
       <motion.div className="two-col-img" data-aos="fade-up">
