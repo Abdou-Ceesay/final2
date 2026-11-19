@@ -2,7 +2,7 @@ import React from 'react'
 
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from "../../assets/img/logo.png"
 import GsapMagnetic from '../magnetic/Magnetic';
 
@@ -78,6 +78,7 @@ width: 100%;
 `
 
 function Navbar() {
+    const { pathname } = useLocation();
     const transition = { duration:1, ease: [0.43, 0.13, 0.23, 0.96], delay:.5};
   return (
     
@@ -91,13 +92,13 @@ function Navbar() {
         
         <ul className='nav-menu'>
         <GsapMagnetic>
-            <li><Link className='nav-item active' to="/">( Home )</Link></li>
+            <li><Link className={`nav-item ${pathname === '/' ? 'active' : ''}`} to="/">( Home )</Link></li>
         </GsapMagnetic>
         {/* <GsapMagnetic>
             <li><Link className='nav-item' to="/work">( Work )</Link></li>
         </GsapMagnetic> */}
         <GsapMagnetic>
-            <li><Link className='nav-item' to="/contact">( Contact )</Link></li>
+            <li><Link className={`nav-item ${pathname === '/contact' ? 'active' : ''}`} to="/contact">( Contact )</Link></li>
         </GsapMagnetic>    
             {/* <li><Link className='nav-item' href="#">( Lab )</Link></li> */}
            
