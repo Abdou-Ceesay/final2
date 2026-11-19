@@ -7,10 +7,13 @@ const StyledStairs = styled.div `
     
     .stairs {
         .transition-container {
-            height: 100vh;
+            /* Taller than the screen on purpose: on iPhone, Safari's bottom toolbar
+               leaves a strip below 100vh that would otherwise show the page behind. */
+            height: 120vh;
+            height: calc(100lvh + 20vh);
             width: 100vw;
             position: fixed;
-            top: 0;
+            top: -10vh;
             left: 0;
             pointer-events: none;
             display: flex;
