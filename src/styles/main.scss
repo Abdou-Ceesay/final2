@@ -13,7 +13,8 @@
     margin-top: var(--spacer);
     padding: var(--padding);
     flex-direction: column;
-    height: 30vh;
+    min-height: 30vh;
+    overflow-x: clip; // keep the background blur from widening the page
     // overflow: hidden;
     justify-content: space-between;
     background-color:var(--black);
@@ -28,11 +29,13 @@
         margin-bottom: 10%;
 
 
+        gap: var(--m-sizing);
+
         h1 {
-            font-size: 96px;
+            font-size: clamp(40px, 6.5vw, 96px);
         }
         h2 {
-            font-size: 81px;
+            font-size: clamp(28px, 5.5vw, 81px);
         }
     }
     .about-client {
@@ -94,7 +97,7 @@
 
 .project-img-wrapper {
     background-color:var(--black);
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     margin: 0 auto;
     overflow: hidden;
@@ -156,7 +159,7 @@
 
 @media only screen and (max-width: 468px) {
     .project-info {
-        height: 20vh;
+        min-height: 0;
         // padding: ;
     }
     .project-title {
