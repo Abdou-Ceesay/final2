@@ -211,7 +211,8 @@ const StyledContact = styled.section`
     .intro { margin-bottom: var(--l-sizing); }
   }
   @media only screen and (max-width: 468px) {
-    padding-top: calc(80px + var(--l-sizing));
+    /* same side margins as the navbar on phones */
+    padding: calc(80px + var(--l-sizing)) 20px var(--l-sizing);
     .row { grid-template-columns: 1fr; }
     button { align-self: stretch; justify-content: center; }
     .socials a { padding: 12px 18px; font-size: 14px; }
