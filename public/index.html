@@ -39,6 +39,15 @@
   
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Hidden copy of the contact form so Netlify detects it at deploy time.
+         The visible form lives in src/pages/Contact.jsx; keep the field names in sync. -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="project"></select>
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
