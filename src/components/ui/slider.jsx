@@ -15,6 +15,7 @@ width: 100%;
     max-height: 120px;
     /* position: absolute; */
     h2 {
+        padding: 0 clamp(12px, 1.4vw, 22px);
         font-size: 38px;
         /* font-weight: 500; */
         color: #fff;
@@ -57,7 +58,7 @@ function slider() {
       }}
       extensions={{ AutoScroll }}>
             <SplideSlide>
-                <h2>Branding</h2>
+                <h2>Product visualization</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +67,7 @@ function slider() {
 
             </SplideSlide>
             <SplideSlide>
-                <h2>UI design</h2>
+                <h2>3D animation</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +75,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>3d Animation</h2>
+                <h2>CGI campaigns</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +83,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>Product design</h2>
+                <h2>FOOH</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +91,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>Branding</h2>
+                <h2>Product visualization</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +99,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>UI design</h2>
+                <h2>3D animation</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +107,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>3d Animation</h2>
+                <h2>CGI campaigns</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +115,7 @@ function slider() {
 </svg>
             </SplideSlide>
             <SplideSlide>
-                <h2>Product design</h2>
+                <h2>FOOH</h2>
             </SplideSlide>
             <SplideSlide>
                 <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
