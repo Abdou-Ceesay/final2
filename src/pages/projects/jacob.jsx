@@ -48,7 +48,7 @@ function Jacob() {
     
     <div className="container-small">
       <div className="one-col-img">
-<iframe className='frame' src="https://player.vimeo.com/video/1138526450?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" width="100%" aspect-ratio="16/9" frameborder="0" allow="autoplay; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe className='frame' src="https://player.vimeo.com/video/1175944961?autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1" width="100%" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="JACOB and Co Casino Tourbillon - CGI"></iframe>
       </div>
       
       <motion.div className="two-col-img" data-aos="fade-up">
